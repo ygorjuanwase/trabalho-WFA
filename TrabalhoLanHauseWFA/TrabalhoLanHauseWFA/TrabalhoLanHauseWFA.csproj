@@ -50,8 +50,69 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCliente.Designer.cs">
+      <DependentUpon>MenuCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuComputadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuComputadores.Designer.cs">
+      <DependentUpon>MenuComputadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuFilialcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuFilialcs.Designer.cs">
+      <DependentUpon>MenuFilialcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuFuncionario.Designer.cs">
+      <DependentUpon>MenuFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuJogos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuJogos.Designer.cs">
+      <DependentUpon>MenuJogos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuJogosDeTabuleiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuJogosDeTabuleiro.Designer.cs">
+      <DependentUpon>MenuJogosDeTabuleiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuLoja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuLoja.Designer.cs">
+      <DependentUpon>MenuLoja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuMangá.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuMangá.Designer.cs">
+      <DependentUpon>MenuMangá.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuConsoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuConsoles.Designer.cs">
+      <DependentUpon>MenuConsoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuConsoles.resx">
+      <DependentUpon>MenuConsoles.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -73,6 +134,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
