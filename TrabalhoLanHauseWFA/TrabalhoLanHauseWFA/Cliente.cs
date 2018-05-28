@@ -8,5 +8,9 @@ namespace TrabalhoLanHauseWFA
 {
     class Cliente
     {
+        public string Nome;
+        public
+        public string NomeDeUsuario;
+
     }
 }

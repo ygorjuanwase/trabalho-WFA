@@ -8,5 +8,6 @@ namespace TrabalhoLanHauseWFA
 {
     class Principal
     {
+        
     }
 }

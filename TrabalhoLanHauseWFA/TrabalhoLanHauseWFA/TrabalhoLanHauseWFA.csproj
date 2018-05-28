@@ -50,6 +50,16 @@
     <Compile Include="TelaCadastrar.Designer.cs">
       <DependentUpon>TelaCadastrar.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Include="TelaEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaEditar.Designer.cs">
+      <DependentUpon>TelaEditar.cs</DependentUpon>
+    </Compile>
+
+>>>>>>> dcb7ad87f3167d5cfbda6be36ce6ec44a47d038e
     <Compile Include="TelaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,17 +123,33 @@
     <Compile Include="Principal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
 
+=======
+    <EmbeddedResource Include="MenuComputadores.resx">
+      <DependentUpon>MenuComputadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaCadastrar.resx">
+      <DependentUpon>TelaCadastrar.cs</DependentUpon>
+	</EmbeddedResource>
+>>>>>>> dcb7ad87f3167d5cfbda6be36ce6ec44a47d038e
     <EmbeddedResource Include="MenuCliente.resx">
       <DependentUpon>MenuCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuLoja.resx">
       <DependentUpon>MenuLoja.cs</DependentUpon>
+<<<<<<< HEAD
 
     </EmbeddedResource>
     <EmbeddedResource Include="TelaCadastrar.resx">
       <DependentUpon>TelaCadastrar.cs</DependentUpon>
 
+=======
+     
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaEditar.resx">
+      <DependentUpon>TelaEditar.cs</DependentUpon>
+>>>>>>> dcb7ad87f3167d5cfbda6be36ce6ec44a47d038e
     </EmbeddedResource>
     <EmbeddedResource Include="TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>

@@ -60,7 +60,8 @@ namespace TrabalhoLanHauseWFA
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MenuComputadores
+            MenuComputadores computadores = new MenuComputadores();
+            computadores.Show();
         }
 
        

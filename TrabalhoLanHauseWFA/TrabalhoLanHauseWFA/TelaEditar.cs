@@ -16,5 +16,37 @@ namespace TrabalhoLanHauseWFA
         {
             InitializeComponent();
         }
+
+       
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string marca = txtMarca.Text;
+            marca = txtMarca.Text;
+        }
+
+        private void txtTamanhoCPU_TextChanged(object sender, EventArgs e)
+        {
+            int tamanhoCpu = 0;
+            try
+            {
+                tamanhoCpu = Convert.ToInt32(txtTamanhoCPU.Text);
+
+            }
+            catch
+            {
+                MessageBox.Show("Tamanho do Cpu deve Conter somente numeros reais.");
+                txtTamanhoCPU.Focus();
+                return;
+            }
+        }
+
+        private void txtProcessador_TextChanged(object sender, EventArgs e)
+        {
+            string processador = txtProcessador.Text;
+            processador = txtProcessador.Text;
+        }
+
+        
     }
 }
