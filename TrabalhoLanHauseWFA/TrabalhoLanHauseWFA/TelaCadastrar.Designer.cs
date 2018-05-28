@@ -157,6 +157,7 @@
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(357, 20);
             this.txtMarca.TabIndex = 11;
+            this.txtMarca.TextChanged += new System.EventHandler(this.txtMarca_TextChanged_1);
             // 
             // cbMause
             // 

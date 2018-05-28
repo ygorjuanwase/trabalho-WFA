@@ -77,6 +77,7 @@
             this.cbMemoria.Name = "cbMemoria";
             this.cbMemoria.Size = new System.Drawing.Size(281, 21);
             this.cbMemoria.TabIndex = 1;
+            this.cbMemoria.SelectedIndexChanged += new System.EventHandler(this.cbMemoria_SelectedIndexChanged);
             // 
             // txtMarca
             // 
@@ -205,6 +206,7 @@
             this.txtPlacaDeVideo.Name = "txtPlacaDeVideo";
             this.txtPlacaDeVideo.Size = new System.Drawing.Size(281, 20);
             this.txtPlacaDeVideo.TabIndex = 16;
+            this.txtPlacaDeVideo.TextChanged += new System.EventHandler(this.txtPlacaDeVideo_TextChanged);
             // 
             // txtPlacaMae
             // 
@@ -212,6 +214,7 @@
             this.txtPlacaMae.Name = "txtPlacaMae";
             this.txtPlacaMae.Size = new System.Drawing.Size(323, 20);
             this.txtPlacaMae.TabIndex = 17;
+            this.txtPlacaMae.TextChanged += new System.EventHandler(this.txtPlacaMae_TextChanged);
             // 
             // mtbTelefone
             // 
@@ -220,6 +223,7 @@
             this.mtbTelefone.Name = "mtbTelefone";
             this.mtbTelefone.Size = new System.Drawing.Size(323, 20);
             this.mtbTelefone.TabIndex = 18;
+            this.mtbTelefone.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mtbTelefone_MaskInputRejected);
             // 
             // mtbDataCompra
             // 

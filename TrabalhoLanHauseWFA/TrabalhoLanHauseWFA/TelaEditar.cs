@@ -47,6 +47,28 @@ namespace TrabalhoLanHauseWFA
             processador = txtProcessador.Text;
         }
 
+        private void cbMemoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPlacaDeVideo_TextChanged(object sender, EventArgs e)
+        {
+            string PlacaDeVideo = txtPlacaDeVideo.Text;
+            PlacaDeVideo = txtPlacaDeVideo.Text;
+        }
+
+        private void txtPlacaMae_TextChanged(object sender, EventArgs e)
+        {
+            string placaMae = txtPlacaMae.Text;
+            placaMae = txtPlacaMae.Text;
+        }
+
+        private void mtbTelefone_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+            
+        }
+
         
     }
 }

@@ -14,10 +14,14 @@ namespace TrabalhoLanHauseWFA
     {
         public TelaCadastrar()
         {
+            
             InitializeComponent();
         }
 
-
+        private void AtualizarLista()
+        {
+            AtualizarLista();
+        }
         private void txtMarca_TextChanged(object sender, EventArgs e)
         {
             string Marca = txtMarca.Text;
@@ -62,6 +66,11 @@ namespace TrabalhoLanHauseWFA
         {
             MenuComputadores computadores = new MenuComputadores();
             computadores.Show();
+        }
+
+        private void txtMarca_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
 
        
