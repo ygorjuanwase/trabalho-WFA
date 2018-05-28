@@ -1,6 +1,6 @@
 ﻿namespace TrabalhoLanHauseWFA
 {
-    partial class MenuMangá
+    partial class MenuManga
     {
         /// <summary>
         /// Required designer variable.

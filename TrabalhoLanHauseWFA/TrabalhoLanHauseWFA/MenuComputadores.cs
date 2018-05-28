@@ -19,8 +19,8 @@ namespace TrabalhoLanHauseWFA
 
         private void btncadastrar_Click(object sender, EventArgs e)
         {
-            TelaCadastrar cadastrar = new TelaCadastrar();
-            cadastrar.Show();
+            //TelaCadastrar cadastrar = new TelaCadastrar();
+           // cadastrar.Show();
         }
 
        

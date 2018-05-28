@@ -16,5 +16,58 @@ namespace TrabalhoLanHauseWFA
         {
             InitializeComponent();
         }
+
+        
+
+        private void btnComputadores_Click(object sender, EventArgs e)
+        {
+            MenuComputadores computadores = new MenuComputadores();
+            computadores.Show();
+        }
+
+        private void btnFuncionario_Click(object sender, EventArgs e)
+        {
+            MenuFuncionario funcionarios = new MenuFuncionario();
+            funcionarios.Show();
+        }
+
+        private void btnConsoles_Click(object sender, EventArgs e)
+        {
+            MenuConsoles consoles = new MenuConsoles();
+            consoles.Show();
+        }
+
+        private void btnFiliais_Click(object sender, EventArgs e)
+        {
+            MenuFilialcs filiais = new MenuFilialcs();
+            filiais.Show();
+        }
+
+        private void btnMangas_Click(object sender, EventArgs e)
+        {
+            MenuManga manga = new MenuManga();
+            manga.Show();
+        }
+
+        private void btnTabuleiros_Click(object sender, EventArgs e)
+        {
+            MenuJogosDeTabuleiro tabuleiros = new MenuJogosDeTabuleiro();
+            tabuleiros.Show();
+        }
+
+        private void btnGames_Click(object sender, EventArgs e)
+        {
+            MenuJogos games = new MenuJogos();
+            games.Show();
+        }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            MenuCliente cliente = new MenuCliente();
+            cliente.Show();
+        }
+
+  
+       
     }
 }
