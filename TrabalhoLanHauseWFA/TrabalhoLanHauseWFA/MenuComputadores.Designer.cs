@@ -40,6 +40,7 @@
             this.btnApagar = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +67,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(88, 187);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(695, 316);
+            this.dataGridView1.Size = new System.Drawing.Size(868, 316);
             this.dataGridView1.TabIndex = 1;
             // 
             // Column1Nome
@@ -100,7 +101,7 @@
             // 
             this.btncadastrar.Font = new System.Drawing.Font("Matura MT Script Capitals", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncadastrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncadastrar.Location = new System.Drawing.Point(478, 137);
+            this.btncadastrar.Location = new System.Drawing.Point(652, 136);
             this.btncadastrar.Name = "btncadastrar";
             this.btncadastrar.Size = new System.Drawing.Size(93, 43);
             this.btncadastrar.TabIndex = 2;
@@ -115,7 +116,7 @@
             this.btnEditar.Font = new System.Drawing.Font("Matura MT Script Capitals", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(577, 139);
+            this.btnEditar.Location = new System.Drawing.Point(751, 138);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(91, 42);
             this.btnEditar.TabIndex = 3;
@@ -128,7 +129,7 @@
             this.btnApagar.Font = new System.Drawing.Font("Matura MT Script Capitals", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApagar.Image = ((System.Drawing.Image)(resources.GetObject("btnApagar.Image")));
             this.btnApagar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnApagar.Location = new System.Drawing.Point(674, 138);
+            this.btnApagar.Location = new System.Drawing.Point(848, 137);
             this.btnApagar.Name = "btnApagar";
             this.btnApagar.Size = new System.Drawing.Size(109, 42);
             this.btnApagar.TabIndex = 4;
@@ -139,7 +140,6 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Matura MT Script Capitals", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.Location = new System.Drawing.Point(88, 138);
             this.button4.Name = "button4";
@@ -151,16 +151,29 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(218, 161);
+            this.textBox1.Location = new System.Drawing.Point(202, 161);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(254, 20);
+            this.textBox1.Size = new System.Drawing.Size(316, 20);
             this.textBox1.TabIndex = 6;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Matura MT Script Capitals", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.button1.Location = new System.Drawing.Point(526, 135);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 44);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Atualizar";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // MenuComputadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(968, 515);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnApagar);
@@ -189,6 +202,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1Processador;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1Fonte;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1Valor;
+        private System.Windows.Forms.Button button1;
 
     }
 }

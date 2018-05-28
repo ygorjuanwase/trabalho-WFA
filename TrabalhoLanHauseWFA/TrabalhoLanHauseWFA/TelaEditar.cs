@@ -16,5 +16,17 @@ namespace TrabalhoLanHauseWFA
         {
             InitializeComponent();
         }
+
+       
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string marca = 
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
