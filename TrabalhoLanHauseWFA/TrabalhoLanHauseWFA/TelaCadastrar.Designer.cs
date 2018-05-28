@@ -152,6 +152,8 @@
             // cbMemoriaRan
             // 
             this.cbMemoriaRan.FormattingEnabled = true;
+            this.cbMemoriaRan.Items.AddRange(new object[] {
+            "16"});
             this.cbMemoriaRan.Location = new System.Drawing.Point(206, 139);
             this.cbMemoriaRan.Name = "cbMemoriaRan";
             this.cbMemoriaRan.Size = new System.Drawing.Size(224, 21);
