@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TrabalhoLanHauseWFA
 {
-    public partial class MenuMangá : Form
+    public partial class MenuManga : Form
     {
-        public MenuMangá()
+        public MenuManga()
         {
             InitializeComponent();
         }

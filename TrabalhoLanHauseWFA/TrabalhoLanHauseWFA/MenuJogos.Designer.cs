@@ -1,6 +1,6 @@
 ﻿namespace TrabalhoLanHauseWFA
 {
-    partial class Menu_Jogos
+    partial class MenuJogos
     {
         /// <summary>
         /// Required designer variable.

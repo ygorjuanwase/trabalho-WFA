@@ -56,6 +56,7 @@
     <Compile Include="TelaEditar.Designer.cs">
       <DependentUpon>TelaEditar.cs</DependentUpon>
     </Compile>
+
     <Compile Include="TelaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +125,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TelaCadastrar.resx">
       <DependentUpon>TelaCadastrar.cs</DependentUpon>
+	</EmbeddedResource>
+    <EmbeddedResource Include="MenuCliente.resx">
+      <DependentUpon>MenuCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuLoja.resx">
+      <DependentUpon>MenuLoja.cs</DependentUpon>
+     
     </EmbeddedResource>
     <EmbeddedResource Include="TelaEditar.resx">
       <DependentUpon>TelaEditar.cs</DependentUpon>

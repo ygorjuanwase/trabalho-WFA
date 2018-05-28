@@ -65,6 +65,14 @@
             // cbMemoria
             // 
             this.cbMemoria.FormattingEnabled = true;
+            this.cbMemoria.Items.AddRange(new object[] {
+            "2",
+            "4",
+            "6",
+            "8",
+            "16",
+            "32",
+            "64"});
             this.cbMemoria.Location = new System.Drawing.Point(192, 114);
             this.cbMemoria.Name = "cbMemoria";
             this.cbMemoria.Size = new System.Drawing.Size(281, 21);
@@ -103,7 +111,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 13);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Procassador";
+            this.label4.Text = "Processador";
             // 
             // label5
             // 
@@ -181,6 +189,7 @@
             this.txtTamanhoCPU.Name = "txtTamanhoCPU";
             this.txtTamanhoCPU.Size = new System.Drawing.Size(281, 20);
             this.txtTamanhoCPU.TabIndex = 14;
+            this.txtTamanhoCPU.TextChanged += new System.EventHandler(this.txtTamanhoCPU_TextChanged);
             // 
             // txtProcessador
             // 
@@ -188,6 +197,7 @@
             this.txtProcessador.Name = "txtProcessador";
             this.txtProcessador.Size = new System.Drawing.Size(281, 20);
             this.txtProcessador.TabIndex = 15;
+            this.txtProcessador.TextChanged += new System.EventHandler(this.txtProcessador_TextChanged);
             // 
             // txtPlacaDeVideo
             // 
