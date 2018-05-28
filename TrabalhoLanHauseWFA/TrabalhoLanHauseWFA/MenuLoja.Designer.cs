@@ -69,7 +69,7 @@
             this.btnMangas.ForeColor = System.Drawing.Color.Aqua;
             this.btnMangas.Image = ((System.Drawing.Image)(resources.GetObject("btnMangas.Image")));
             this.btnMangas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMangas.Location = new System.Drawing.Point(240, 223);
+            this.btnMangas.Location = new System.Drawing.Point(414, 223);
             this.btnMangas.Name = "btnMangas";
             this.btnMangas.Size = new System.Drawing.Size(216, 71);
             this.btnMangas.TabIndex = 44;
@@ -84,7 +84,7 @@
             this.btnComputadores.ForeColor = System.Drawing.Color.Aqua;
             this.btnComputadores.Image = ((System.Drawing.Image)(resources.GetObject("btnComputadores.Image")));
             this.btnComputadores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnComputadores.Location = new System.Drawing.Point(240, 69);
+            this.btnComputadores.Location = new System.Drawing.Point(414, 69);
             this.btnComputadores.Name = "btnComputadores";
             this.btnComputadores.Size = new System.Drawing.Size(216, 71);
             this.btnComputadores.TabIndex = 42;
@@ -99,7 +99,7 @@
             this.btnFiliais.ForeColor = System.Drawing.Color.Aqua;
             this.btnFiliais.Image = ((System.Drawing.Image)(resources.GetObject("btnFiliais.Image")));
             this.btnFiliais.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFiliais.Location = new System.Drawing.Point(18, 223);
+            this.btnFiliais.Location = new System.Drawing.Point(192, 223);
             this.btnFiliais.Name = "btnFiliais";
             this.btnFiliais.Size = new System.Drawing.Size(216, 71);
             this.btnFiliais.TabIndex = 43;
@@ -114,7 +114,7 @@
             this.btnConsoles.ForeColor = System.Drawing.Color.Aqua;
             this.btnConsoles.Image = ((System.Drawing.Image)(resources.GetObject("btnConsoles.Image")));
             this.btnConsoles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsoles.Location = new System.Drawing.Point(240, 146);
+            this.btnConsoles.Location = new System.Drawing.Point(414, 146);
             this.btnConsoles.Name = "btnConsoles";
             this.btnConsoles.Size = new System.Drawing.Size(216, 71);
             this.btnConsoles.TabIndex = 41;
@@ -128,7 +128,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Aqua;
-            this.label1.Location = new System.Drawing.Point(91, 9);
+            this.label1.Location = new System.Drawing.Point(257, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(282, 57);
             this.label1.TabIndex = 36;
@@ -141,7 +141,7 @@
             this.btnGames.ForeColor = System.Drawing.Color.Aqua;
             this.btnGames.Image = ((System.Drawing.Image)(resources.GetObject("btnGames.Image")));
             this.btnGames.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGames.Location = new System.Drawing.Point(240, 300);
+            this.btnGames.Location = new System.Drawing.Point(414, 300);
             this.btnGames.Name = "btnGames";
             this.btnGames.Size = new System.Drawing.Size(216, 71);
             this.btnGames.TabIndex = 37;
@@ -156,7 +156,7 @@
             this.btnTabuleiros.ForeColor = System.Drawing.Color.Aqua;
             this.btnTabuleiros.Image = ((System.Drawing.Image)(resources.GetObject("btnTabuleiros.Image")));
             this.btnTabuleiros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTabuleiros.Location = new System.Drawing.Point(18, 300);
+            this.btnTabuleiros.Location = new System.Drawing.Point(192, 300);
             this.btnTabuleiros.Name = "btnTabuleiros";
             this.btnTabuleiros.Size = new System.Drawing.Size(218, 71);
             this.btnTabuleiros.TabIndex = 38;
@@ -171,7 +171,7 @@
             this.btnCliente.ForeColor = System.Drawing.Color.Aqua;
             this.btnCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnCliente.Image")));
             this.btnCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCliente.Location = new System.Drawing.Point(18, 69);
+            this.btnCliente.Location = new System.Drawing.Point(192, 69);
             this.btnCliente.Name = "btnCliente";
             this.btnCliente.Size = new System.Drawing.Size(216, 71);
             this.btnCliente.TabIndex = 39;
@@ -186,7 +186,7 @@
             this.btnFuncionario.ForeColor = System.Drawing.Color.Aqua;
             this.btnFuncionario.Image = ((System.Drawing.Image)(resources.GetObject("btnFuncionario.Image")));
             this.btnFuncionario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFuncionario.Location = new System.Drawing.Point(18, 146);
+            this.btnFuncionario.Location = new System.Drawing.Point(192, 146);
             this.btnFuncionario.Name = "btnFuncionario";
             this.btnFuncionario.Size = new System.Drawing.Size(216, 71);
             this.btnFuncionario.TabIndex = 40;
