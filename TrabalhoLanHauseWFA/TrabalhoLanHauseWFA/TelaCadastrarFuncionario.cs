@@ -16,8 +16,7 @@ namespace TrabalhoLanHauseWFA
         {
             InitializeComponent();
         }
-     public TelaCadastrarFuncionario(Funcionario funcionario)
-            
+        public TelaCadastrarFuncionario(Funcionario funcionario)
         {
             txtNome.Text = funcionario.Nome;
             txtSobrenome.Text = funcionario.Sobrenome;
@@ -40,49 +39,49 @@ namespace TrabalhoLanHauseWFA
 
         private void button2_Click(object sender, EventArgs e)
         {
-        if(txtNome.Text.Length <= 4)
-        {
-            MessageBox.Show("Nome DEVE Conter Mais e Quatro Letras.");
-            txtNome.Focus();
-            return;
-        }
-            if(txtIdade.Text.Length == 14)
+            if (txtNome.Text.Length <= 4)
+            {
+                MessageBox.Show("Nome DEVE Conter Mais e Quatro Letras.");
+                txtNome.Focus();
+                return;
+            }
+            if (txtIdade.Text.Length == 14)
             {
                 MessageBox.Show("Você sera Nosso Menor Aprendiz");
             }
-            else if(txtIdade.Text.Length > 14 && txtIdade.Text.Length < 40)
+            else if (txtIdade.Text.Length > 14 && txtIdade.Text.Length < 40)
             {
                 MessageBox.Show("Você é nosso Abigo Trabalhador");
             }
-            else if(txtIdade.Text.Length >=40 && txtIdade.Text.Length <= 80 )
+            else if (txtIdade.Text.Length >= 40 && txtIdade.Text.Length <= 80)
             {
                 MessageBox.Show("VOCÊ È NOSSO ANCIÂO MAIS SABIO.");
             }
-            if(txtSobrenome.Text.Length <= 4)
+            if (txtSobrenome.Text.Length <= 4)
             {
                 MessageBox.Show("Sobrenome deve Conter Mais de Quatro(4) letras.");
                 txtSobrenome.Focus();
                 return;
             }
-            if(mtbRG.MaskFull ) 
-            { 
-
-            }
-            if(mtbCPF.MaskFull )
+            if (mtbRG.MaskFull)
             {
 
             }
-            if(cbNascionalidade.SelectedIndex < 0)
+            if (mtbCPF.MaskFull)
+            {
+
+            }
+            if (cbNascionalidade.SelectedIndex < 0)
             {
                 MessageBox.Show("Não ten nenhuma Nascionalidade Selecionada.");
-                    return;
+                return;
             }
-            if(mtbCEP.MaskFull )
+            if (mtbCEP.MaskFull)
             {
 
             }
 
-            
+
         }
     }
 }

@@ -24,11 +24,11 @@ namespace TrabalhoLanHauseWFA
         public string Referencias;
         public int RG;
         public int CPF;
-        public DateTime DataDeNascimento;
+        public int DataDeNascimento;
         public int TelefoneResidencial;
         public int TelefoneComercial;
         public int TelefoneCelular;
-        public DateTime DataDoCadastro;
+        public int DataDoCadastro;
         public DateTime DataDaUltimaCompra;
         public string Email;
 

@@ -8,7 +8,7 @@ namespace TrabalhoLanHauseWFA
 {
     static class Program
     {
-        public static List<Cliente> cliente = new List<Cliente>();
+        public static List<Cliente> clientes = new List<Cliente>();
         public static List<Funcionario> funcionario = new List<Funcionario>();
         /// <summary>
         /// The main entry point for the application.

@@ -27,8 +27,9 @@ namespace TrabalhoLanHauseWFA
 
         private void btnFuncionario_Click(object sender, EventArgs e)
         {
-            MenuFuncionario funcionarios = new MenuFuncionario();
-            funcionarios.Show();
+            MenuFuncionario funcionario = new MenuFuncionario();
+            funcionario.Show();
+            
         }
 
         private void btnConsoles_Click(object sender, EventArgs e)
