@@ -8,18 +8,18 @@ namespace TrabalhoLanHauseWFA
 {
     class Funcionario
     {
-        string Nome;
-        string Sobrenome;
-        int Idade;
-        int RG;
-        int CPF;
-        string Nascionalidade;
-        string Endereco;
-        string CargoPretendido;
-        string Ecolaridade;
-        double DataDeNascimento;
-        string CursoSuperior;
-        string EstadoCivil;
+        public  string Nome;
+        public string Sobrenome;
+        public string Idade;
+        public string RG;
+        public string CPF;
+        public string Nascionalidade;
+        public string Endereco;
+        public string CargoPretendido;
+        public string Ecolaridade;
+        public int DataDeNascimento;
+        public string CursoSuperior;
+        public string EstadoCivil;
 
     }
 }

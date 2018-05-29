@@ -64,13 +64,17 @@ namespace TrabalhoLanHauseWFA
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MenuComputadores computadores = new MenuComputadores();
-            computadores.Show();
+            Dispose();
         }
 
         private void txtMarca_TextChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dispose();
         }
 
        

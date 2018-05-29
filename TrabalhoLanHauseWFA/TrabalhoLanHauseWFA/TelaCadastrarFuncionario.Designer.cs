@@ -28,14 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCadastrarFuncionario));
             this.label11 = new System.Windows.Forms.Label();
             this.rbtnNao = new System.Windows.Forms.RadioButton();
             this.rbtnSim = new System.Windows.Forms.RadioButton();
             this.mtbDatadenascimento = new System.Windows.Forms.MaskedTextBox();
             this.txtEndereco = new System.Windows.Forms.TextBox();
-            this.txtCPF = new System.Windows.Forms.TextBox();
-            this.txtRG = new System.Windows.Forms.TextBox();
             this.txtSobrenome = new System.Windows.Forms.TextBox();
             this.cbEstadeoCivil = new System.Windows.Forms.ComboBox();
             this.cbEscolaridade = new System.Windows.Forms.ComboBox();
@@ -55,14 +53,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txtIdade = new System.Windows.Forms.TextBox();
+            this.mtbRG = new System.Windows.Forms.MaskedTextBox();
+            this.mtbCPF = new System.Windows.Forms.MaskedTextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.mtbCEP = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(67, 329);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(365, 20);
-            this.textBox1.TabIndex = 36;
             // 
             // label11
             // 
@@ -110,20 +106,6 @@
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(326, 20);
             this.txtEndereco.TabIndex = 37;
-            // 
-            // txtCPF
-            // 
-            this.txtCPF.Location = new System.Drawing.Point(67, 235);
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(365, 20);
-            this.txtCPF.TabIndex = 32;
-            // 
-            // txtRG
-            // 
-            this.txtRG.Location = new System.Drawing.Point(67, 184);
-            this.txtRG.Name = "txtRG";
-            this.txtRG.Size = new System.Drawing.Size(369, 20);
-            this.txtRG.TabIndex = 30;
             // 
             // txtSobrenome
             // 
@@ -299,21 +281,72 @@
             this.txtIdade.Size = new System.Drawing.Size(331, 20);
             this.txtIdade.TabIndex = 50;
             // 
+            // mtbRG
+            // 
+            this.mtbRG.Location = new System.Drawing.Point(67, 186);
+            this.mtbRG.Mask = "0,000,000";
+            this.mtbRG.Name = "mtbRG";
+            this.mtbRG.Size = new System.Drawing.Size(275, 20);
+            this.mtbRG.TabIndex = 51;
+            // 
+            // mtbCPF
+            // 
+            this.mtbCPF.Location = new System.Drawing.Point(67, 236);
+            this.mtbCPF.Mask = "000,000,000-00";
+            this.mtbCPF.Name = "mtbCPF";
+            this.mtbCPF.Size = new System.Drawing.Size(312, 20);
+            this.mtbCPF.TabIndex = 52;
+            // 
+            // button1
+            // 
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(727, 366);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(87, 53);
+            this.button1.TabIndex = 53;
+            this.button1.Text = "Cancelar";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(820, 366);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(81, 53);
+            this.button2.TabIndex = 54;
+            this.button2.Text = "Salvar";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // mtbCEP
+            // 
+            this.mtbCEP.Location = new System.Drawing.Point(67, 332);
+            this.mtbCEP.Mask = "00000-000";
+            this.mtbCEP.Name = "mtbCEP";
+            this.mtbCEP.Size = new System.Drawing.Size(312, 20);
+            this.mtbCEP.TabIndex = 55;
+            // 
             // TelaCadastrarFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1061, 581);
+            this.Controls.Add(this.mtbCEP);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.mtbCPF);
+            this.Controls.Add(this.mtbRG);
             this.Controls.Add(this.txtIdade);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.rbtnNao);
             this.Controls.Add(this.rbtnSim);
             this.Controls.Add(this.mtbDatadenascimento);
             this.Controls.Add(this.txtEndereco);
-            this.Controls.Add(this.txtCPF);
-            this.Controls.Add(this.txtRG);
             this.Controls.Add(this.txtSobrenome);
             this.Controls.Add(this.cbEstadeoCivil);
             this.Controls.Add(this.cbEscolaridade);
@@ -340,14 +373,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.RadioButton rbtnNao;
         private System.Windows.Forms.RadioButton rbtnSim;
         private System.Windows.Forms.MaskedTextBox mtbDatadenascimento;
         private System.Windows.Forms.TextBox txtEndereco;
-        private System.Windows.Forms.TextBox txtCPF;
-        private System.Windows.Forms.TextBox txtRG;
         private System.Windows.Forms.TextBox txtSobrenome;
         private System.Windows.Forms.ComboBox cbEstadeoCivil;
         private System.Windows.Forms.ComboBox cbEscolaridade;
@@ -367,5 +397,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtIdade;
+        private System.Windows.Forms.MaskedTextBox mtbRG;
+        private System.Windows.Forms.MaskedTextBox mtbCPF;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.MaskedTextBox mtbCEP;
     }
 }

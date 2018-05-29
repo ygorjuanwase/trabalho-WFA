@@ -46,7 +46,7 @@ namespace TrabalhoLanHauseWFA
             for(int i = 0; i < Program.funcionario.Count; i++)
             {
                 Funcionario funcionario = Program.funcionario[i];
-                if(funcionario.ativo == true &&(funcionario.)
+                
             }
         }
     }
