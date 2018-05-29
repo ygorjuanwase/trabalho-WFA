@@ -52,11 +52,18 @@
     </Compile>
     <Compile Include="Cliente.cs" />
     <Compile Include="Computadores.cs" />
+    <Compile Include="Funcionario.cs" />
     <Compile Include="TelaCadastrar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TelaCadastrar.Designer.cs">
       <DependentUpon>TelaCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaCadastrarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaCadastrarFuncionario.Designer.cs">
+      <DependentUpon>TelaCadastrarFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaEditar.cs">
       <SubType>Form</SubType>
@@ -144,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuLoja.resx">
       <DependentUpon>MenuLoja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaCadastrarFuncionario.resx">
+      <DependentUpon>TelaCadastrarFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaEditar.resx">
       <DependentUpon>TelaEditar.cs</DependentUpon>
