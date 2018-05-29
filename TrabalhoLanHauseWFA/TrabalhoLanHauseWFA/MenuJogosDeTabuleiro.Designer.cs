@@ -28,11 +28,104 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(44, 224);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(902, 338);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(655, 173);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 45);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Cadastrar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(755, 173);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(96, 45);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Editar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(152, 198);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(395, 20);
+            this.textBox1.TabIndex = 3;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(857, 173);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(91, 46);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Apagar";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(553, 173);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(96, 45);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Atualizar";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(44, 173);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(102, 48);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "Buscar";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // MenuJogosDeTabuleiro
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1020, 574);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridView1);
+            this.Name = "MenuJogosDeTabuleiro";
             this.Text = "MenuJogosDeTabuleiro";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }

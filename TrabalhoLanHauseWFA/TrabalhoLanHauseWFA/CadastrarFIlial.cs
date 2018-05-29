@@ -16,5 +16,21 @@ namespace TrabalhoLanHauseWFA
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MenuFilialcs menufilial = new MenuFilialcs();
+            menufilial.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
+
+        private void txtNomeDaFilial_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

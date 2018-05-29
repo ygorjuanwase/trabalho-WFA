@@ -16,5 +16,18 @@ namespace TrabalhoLanHauseWFA
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CadastrarFIlial CadastrarFilial = new CadastrarFIlial();
+            CadastrarFilial.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+             CadastrarFIlial CadastrarFilial = new CadastrarFIlial();
+            CadastrarFilial.Show();
+        
+        }
     }
 }

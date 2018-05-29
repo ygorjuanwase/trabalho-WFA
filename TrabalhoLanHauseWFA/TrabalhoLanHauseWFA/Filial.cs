@@ -8,5 +8,15 @@ namespace TrabalhoLanHauseWFA
 {
     class Filial
     {
+         public string NomeFilial;
+         public string Bairro;
+         public string Pais;
+         public string Telefone;
+         public string Email;
+         public string Responsavel;
+         public string Endereco;
+         public string CNPJ;
+         public string CEP;
+         
     }
 }

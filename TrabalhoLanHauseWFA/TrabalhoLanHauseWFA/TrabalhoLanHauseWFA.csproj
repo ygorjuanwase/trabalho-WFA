@@ -50,8 +50,15 @@
     <Compile Include="CadastrarCliente.Designer.cs">
       <DependentUpon>CadastrarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastrarFIlial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarFIlial.Designer.cs">
+      <DependentUpon>CadastrarFIlial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cliente.cs" />
     <Compile Include="Computadores.cs" />
+    <Compile Include="Filial.cs" />
     <Compile Include="Funcionario.cs" />
     <Compile Include="TelaCadastrar.cs">
       <SubType>Form</SubType>
@@ -137,11 +144,20 @@
     <EmbeddedResource Include="CadastrarCliente.resx">
       <DependentUpon>CadastrarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarFIlial.resx">
+      <DependentUpon>CadastrarFIlial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuComputadores.resx">
       <DependentUpon>MenuComputadores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuFilialcs.resx">
+      <DependentUpon>MenuFilialcs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuFuncionario.resx">
       <DependentUpon>MenuFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuJogosDeTabuleiro.resx">
+      <DependentUpon>MenuJogosDeTabuleiro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaCadastrar.resx">
       <DependentUpon>TelaCadastrar.cs</DependentUpon>

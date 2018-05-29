@@ -16,7 +16,8 @@ namespace TrabalhoLanHauseWFA
         {
             InitializeComponent();
         }
-     public TelaCadastrarFuncionario(Funcionario funcionario, int posicao)
+     public TelaCadastrarFuncionario(Funcionario funcionario)
+            
         {
             txtNome.Text = funcionario.Nome;
             txtSobrenome.Text = funcionario.Sobrenome;

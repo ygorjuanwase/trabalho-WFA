@@ -49,5 +49,24 @@ namespace TrabalhoLanHauseWFA
                 
             }
         }
+
+        
+        private void AtualizarLista()
+        {
+            dtgFuncionario.Rows.Clear();
+            string busca =
+                txtBusca.Text.ToLower().Trim();
+            for (int i = 0; i < Program.funcionario.Count; i++)
+            {
+                Funcionario funcionario = Program.funcionario[i];
+                if (funcionario.Nome.Contains(busca) || (funcionario.CargoPretendido.Contains(busca)))
+                {
+                    dtgFuncionario.Rows.Add(new Object[]{
+                       funcionario.Nome, funcionario.CargoPretendido, funcionario.Nascionalidade});
+                }
+
+                }
+            }
+        }
     }
 }
