@@ -17,9 +17,12 @@ namespace TrabalhoLanHauseWFA
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btnCadastrar_Click(object sender, EventArgs e)
         {
-
+            CadastrarCliente cadastrar = new CadastrarCliente();
+            cadastrar.Show();
         }
+
+      
     }
 }

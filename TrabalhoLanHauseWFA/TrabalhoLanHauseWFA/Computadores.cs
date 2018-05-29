@@ -14,7 +14,6 @@ namespace TrabalhoLanHauseWFA
         public string Processador;
         public string PlacaDeVideo;
         public string PlacaMae;
-        public
-        public
+
     }
 }
