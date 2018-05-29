@@ -62,10 +62,42 @@ namespace TrabalhoLanHauseWFA
                 return;
             }
 
-            if(txtLogradouro.Text.Length < 0)
+            if(txtLogradouro.Text.Length < 1)
             {
                 MessageBox.Show("Informe um logradouro");
+                txtLogradouro.Focus();
+                return;
             }
+
+            if(txtNumero.Text.Length < 1)
+            {
+                MessageBox.Show("Infome o numero da casa");
+                txtNumero.Focus();
+                return;
+            }
+
+            if(mbCEP.Text.Length < 7)
+            {
+                MessageBox.Show("Cep invalido");
+                mbCEP.Focus();
+                return;
+            }
+
+            if(txtBairro.Text.Length < 1)
+            {
+                MessageBox.Show("Informe um bairro");
+                txtBairro.Focus();
+                return;
+            }
+
+            if (txtCidade.Text.Length < 1)
+            {
+                MessageBox.Show("Informe uma cidade");
+                txtCidade.Focus();
+                return;
+            }
+
+
             Cliente cliente = new Cliente()
             {
                 Nome = txtNome.Text,
