@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Cliente.cs" />
     <Compile Include="Computadores.cs" />
+    <Compile Include="Funcionario.cs" />
     <Compile Include="TelaCadastrar.cs">
       <SubType>Form</SubType>
     </Compile>

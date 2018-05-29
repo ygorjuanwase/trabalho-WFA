@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace TrabalhoLanHauseWFA
 {
-    public partial class MenuFuncionario : Form
+    public partial class TelaCadastrarFuncionario : Form
     {
-        public MenuFuncionario()
+        public TelaCadastrarFuncionario()
         {
             InitializeComponent();
-        }
-
-        private void MenuFuncionario_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
