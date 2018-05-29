@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabalhoLanHauseWFA
 {
-    class Funcionario
+    public class Funcionario
     {
         public  string Nome;
         public string Sobrenome;
