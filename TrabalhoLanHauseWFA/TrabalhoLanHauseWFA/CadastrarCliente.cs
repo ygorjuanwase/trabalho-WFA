@@ -18,6 +18,29 @@ namespace TrabalhoLanHauseWFA
             InitializeComponent();
         }
 
+        public CadastrarCliente(Cliente cliente, int posicao)
+        {
+            this.posicao = posicao;
+            txtNome.Text = cliente.Nome;
+            txtSobrenome.Text = cliente.Sobrenome;
+            txtNomeUsuario.Text = cliente.NomeDeUsuario;
+            txtSenha.Text = cliente.Senha;
+            txtComfirmarSenha.Text = cliente.ConfirmarSenha;
+            cbSexo.SelectedItem = cliente.Sexo;
+            txtLogradouro.Text = cliente.Logradouro;
+            txtNumero.Text = Convert.ToString(cliente.Numero);
+            txtComplemento.Text = cliente.Complemento;
+            mbCEP.Text = Convert.ToString(cliente.CEP);
+            txtBairro.Text = cliente.Bairro;
+            txtCidade.Text = cliente.Cidade;
+            mbUF.Text = cliente.UF;
+            txtReferencias.Text = cliente.Referencias;
+            mbRG.Text = Convert.ToString(cliente.RG);
+            mbCPF.Text = cliente.CPF;
+            txtEmail.Text = cliente.Email;
+
+        }
+
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             if(txtNome.Text.Length < 1)

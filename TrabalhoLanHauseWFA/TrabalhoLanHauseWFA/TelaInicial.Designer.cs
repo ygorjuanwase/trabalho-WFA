@@ -56,7 +56,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(763, 421);
+            this.panel1.Size = new System.Drawing.Size(892, 613);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox4
@@ -64,7 +64,7 @@
             this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(254, 221);
+            this.pictureBox4.Location = new System.Drawing.Point(0, 364);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(169, 118);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -79,7 +79,7 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(254, 342);
+            this.label1.Location = new System.Drawing.Point(326, 506);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(274, 57);
             this.label1.TabIndex = 4;
@@ -89,9 +89,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(12, 14);
+            this.pictureBox3.Location = new System.Drawing.Point(12, 3);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(309, 247);
+            this.pictureBox3.Size = new System.Drawing.Size(293, 223);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
@@ -100,9 +100,9 @@
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(204, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(518, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(474, 237);
+            this.pictureBox2.Size = new System.Drawing.Size(351, 227);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -111,9 +111,9 @@
             // 
             this.progressBar1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.progressBar1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.progressBar1.Location = new System.Drawing.Point(50, 290);
+            this.progressBar1.Location = new System.Drawing.Point(175, 432);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(678, 31);
+            this.progressBar1.Size = new System.Drawing.Size(577, 31);
             this.progressBar1.TabIndex = 1;
             // 
             // pictureBox1
@@ -123,7 +123,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(763, 421);
+            this.pictureBox1.Size = new System.Drawing.Size(892, 613);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -137,11 +137,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(763, 421);
+            this.ClientSize = new System.Drawing.Size(892, 613);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "TelaInicial";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela inicial";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

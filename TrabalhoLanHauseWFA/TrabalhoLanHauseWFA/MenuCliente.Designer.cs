@@ -33,14 +33,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnCompradas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnRestantes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnAtualizar = new System.Windows.Forms.Button();
-            this.btnHoras = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.ColumnNomee = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSenha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,7 +71,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(438, 73);
+            this.label2.Location = new System.Drawing.Point(551, 73);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 33);
             this.label2.TabIndex = 2;
@@ -86,14 +86,86 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnNomee,
             this.ColumnNome,
-            this.ColumnCompradas,
-            this.ColumnRestantes});
+            this.ColumnSenha});
             this.dataGridView1.Location = new System.Drawing.Point(12, 155);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(755, 341);
+            this.dataGridView1.Size = new System.Drawing.Size(868, 446);
             this.dataGridView1.TabIndex = 3;
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBuscar.Location = new System.Drawing.Point(637, 83);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(243, 20);
+            this.txtBuscar.TabIndex = 4;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
+            this.txtBuscar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBuscar_KeyDown);
+            // 
+            // btnAtualizar
+            // 
+            this.btnAtualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAtualizar.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnAtualizar.Image")));
+            this.btnAtualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAtualizar.Location = new System.Drawing.Point(286, 109);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(142, 40);
+            this.btnAtualizar.TabIndex = 5;
+            this.btnAtualizar.Text = "Atualizar";
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEditar.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditar.Location = new System.Drawing.Point(579, 107);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(145, 40);
+            this.btnEditar.TabIndex = 7;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnCadastrar
+            // 
+            this.btnCadastrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCadastrar.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCadastrar.Image")));
+            this.btnCadastrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCadastrar.Location = new System.Drawing.Point(730, 109);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(150, 40);
+            this.btnCadastrar.TabIndex = 8;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(434, 107);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(139, 42);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Apagar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // ColumnNomee
+            // 
+            this.ColumnNomee.HeaderText = "Nome";
+            this.ColumnNomee.Name = "ColumnNomee";
+            this.ColumnNomee.ReadOnly = true;
+            this.ColumnNomee.Width = 220;
             // 
             // ColumnNome
             // 
@@ -102,99 +174,31 @@
             this.ColumnNome.ReadOnly = true;
             this.ColumnNome.Width = 260;
             // 
-            // ColumnCompradas
+            // ColumnSenha
             // 
-            this.ColumnCompradas.HeaderText = "Horas Compradas";
-            this.ColumnCompradas.Name = "ColumnCompradas";
-            this.ColumnCompradas.ReadOnly = true;
-            this.ColumnCompradas.Width = 275;
-            // 
-            // ColumnRestantes
-            // 
-            this.ColumnRestantes.HeaderText = "Horas Restantes";
-            this.ColumnRestantes.Name = "ColumnRestantes";
-            this.ColumnRestantes.ReadOnly = true;
-            this.ColumnRestantes.Width = 275;
-            // 
-            // txtBuscar
-            // 
-            this.txtBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBuscar.Location = new System.Drawing.Point(524, 83);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(243, 20);
-            this.txtBuscar.TabIndex = 4;
-            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
-            // 
-            // btnAtualizar
-            // 
-            this.btnAtualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAtualizar.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnAtualizar.Image")));
-            this.btnAtualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAtualizar.Location = new System.Drawing.Point(93, 109);
-            this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(164, 40);
-            this.btnAtualizar.TabIndex = 5;
-            this.btnAtualizar.Text = "Atualizar";
-            this.btnAtualizar.UseVisualStyleBackColor = true;
-            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
-            // 
-            // btnHoras
-            // 
-            this.btnHoras.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnHoras.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHoras.Image = ((System.Drawing.Image)(resources.GetObject("btnHoras.Image")));
-            this.btnHoras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHoras.Location = new System.Drawing.Point(263, 109);
-            this.btnHoras.Name = "btnHoras";
-            this.btnHoras.Size = new System.Drawing.Size(164, 40);
-            this.btnHoras.TabIndex = 6;
-            this.btnHoras.Text = "Horas";
-            this.btnHoras.UseVisualStyleBackColor = true;
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEditar.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
-            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(433, 109);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(164, 40);
-            this.btnEditar.TabIndex = 7;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            // 
-            // btnCadastrar
-            // 
-            this.btnCadastrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCadastrar.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCadastrar.Location = new System.Drawing.Point(603, 109);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(164, 40);
-            this.btnCadastrar.TabIndex = 8;
-            this.btnCadastrar.Text = "Cadastrar";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
-            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            this.ColumnSenha.HeaderText = "Senha";
+            this.ColumnSenha.Name = "ColumnSenha";
+            this.ColumnSenha.ReadOnly = true;
+            this.ColumnSenha.Width = 240;
             // 
             // MenuCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(779, 508);
+            this.ClientSize = new System.Drawing.Size(892, 613);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.btnHoras);
             this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.MaximizeBox = false;
             this.Name = "MenuCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu_Cliente";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -207,14 +211,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCompradas;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnRestantes;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Button btnAtualizar;
-        private System.Windows.Forms.Button btnHoras;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNomee;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSenha;
 
 
     }

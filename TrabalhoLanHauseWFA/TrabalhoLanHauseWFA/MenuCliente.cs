@@ -22,29 +22,54 @@ namespace TrabalhoLanHauseWFA
             CadastrarCliente cadastrar = new CadastrarCliente();
             cadastrar.Show();
         }
-        private void AtualizarLista();
-
-        private void btnAtualizar_Click(object sender, EventArgs e)
+        private void AtualizarLista()
         {
             dataGridView1.Rows.Clear();
             string busca = txtBuscar.Text.ToLower().Trim();
             for (int i = 0; i < Program.clientes.Count; i++)
             {
                 Cliente clinete = Program.clientes[i];
-                if (clinete.NomeDeUsuario.Contains(busca) && (clinete..Contains(busca) || (clinete.Marca.Contains(busca))))
+                if (clinete.Nome.Contains(busca) && (clinete.NomeDeUsuario.Contains(busca) || (clinete.Senha.Contains(busca))))
                 {
 
                     dataGridView1.Rows.Add(new object[]{
-                    clinete.Nome, clinete.Cor, clinete.Marca, clinete.Valor
+                    clinete.Nome, clinete.NomeDeUsuario, clinete.NomeDeUsuario, 
 
                 });
                 }
             }
         }
+    
+   
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            AtualizarLista();
+        }
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.CurrentRow == null)
+            {
+                MessageBox.Show("Não tem nenhuma peça seleciona");
+                return;
+            }
+
+            int linhaSelecionada = dataGridView1.CurrentRow.Index;
+            Cliente cliente = Program.clientes[linhaSelecionada];
+            new CadastrarCliente(cliente, linhaSelecionada).ShowDialog();
+        }
+
+        private void txtBuscar_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                AtualizarLista();
+            }
         }
 
       

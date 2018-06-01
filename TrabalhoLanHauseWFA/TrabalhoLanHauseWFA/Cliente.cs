@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabalhoLanHauseWFA
 {
-    class Cliente
+    public class Cliente
     {
         public string Nome;
         public string Sobrenome;
