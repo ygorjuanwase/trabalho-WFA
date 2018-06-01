@@ -64,22 +64,22 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.mbDataDoCadastro = new System.Windows.Forms.MaskedTextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.mbDataDeNascimento = new System.Windows.Forms.MaskedTextBox();
-            this.label21 = new System.Windows.Forms.Label();
             this.mbTelefoneComercial = new System.Windows.Forms.MaskedTextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.mbTelefoneCelular = new System.Windows.Forms.MaskedTextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.mbTelefoneResidencial = new System.Windows.Forms.MaskedTextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.mbCPF = new System.Windows.Forms.MaskedTextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.mbRG = new System.Windows.Forms.MaskedTextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label21 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.mbCPF = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -88,8 +88,9 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(717, 28);
+            this.pictureBox1.Location = new System.Drawing.Point(249, 16);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(167, 166);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -98,9 +99,13 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.cbSexo);
             this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.txtComfirmarSenha);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txtSenha);
@@ -238,6 +243,9 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.txtReferencias);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.mbUF);
@@ -318,7 +326,7 @@
             // txtBairro
             // 
             this.txtBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBairro.Location = new System.Drawing.Point(241, 76);
+            this.txtBairro.Location = new System.Drawing.Point(222, 76);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(194, 26);
             this.txtBairro.TabIndex = 21;
@@ -405,11 +413,15 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.mbCPF);
+            this.groupBox2.Controls.Add(this.dateTimePicker2);
+            this.groupBox2.Controls.Add(this.dateTimePicker1);
             this.groupBox2.Controls.Add(this.txtEmail);
             this.groupBox2.Controls.Add(this.label23);
-            this.groupBox2.Controls.Add(this.mbDataDoCadastro);
             this.groupBox2.Controls.Add(this.label22);
-            this.groupBox2.Controls.Add(this.mbDataDeNascimento);
             this.groupBox2.Controls.Add(this.label21);
             this.groupBox2.Controls.Add(this.mbTelefoneComercial);
             this.groupBox2.Controls.Add(this.label20);
@@ -417,7 +429,6 @@
             this.groupBox2.Controls.Add(this.label19);
             this.groupBox2.Controls.Add(this.mbTelefoneResidencial);
             this.groupBox2.Controls.Add(this.label18);
-            this.groupBox2.Controls.Add(this.mbCPF);
             this.groupBox2.Controls.Add(this.label17);
             this.groupBox2.Controls.Add(this.mbRG);
             this.groupBox2.Controls.Add(this.label16);
@@ -427,7 +438,7 @@
             this.groupBox2.Size = new System.Drawing.Size(864, 183);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Outras informações";
+            this.groupBox2.Text = "Salvar";
             // 
             // txtEmail
             // 
@@ -446,16 +457,6 @@
             this.label23.TabIndex = 28;
             this.label23.Text = "E-mail";
             // 
-            // mbDataDoCadastro
-            // 
-            this.mbDataDoCadastro.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbDataDoCadastro.Location = new System.Drawing.Point(733, 44);
-            this.mbDataDoCadastro.Mask = "00/00/0000";
-            this.mbDataDoCadastro.Name = "mbDataDoCadastro";
-            this.mbDataDoCadastro.Size = new System.Drawing.Size(96, 25);
-            this.mbDataDoCadastro.TabIndex = 41;
-            this.mbDataDoCadastro.ValidatingType = typeof(System.DateTime);
-            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -464,25 +465,6 @@
             this.label22.Size = new System.Drawing.Size(141, 25);
             this.label22.TabIndex = 40;
             this.label22.Text = "Data do cadastro";
-            // 
-            // mbDataDeNascimento
-            // 
-            this.mbDataDeNascimento.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbDataDeNascimento.Location = new System.Drawing.Point(178, 115);
-            this.mbDataDeNascimento.Mask = "00/00/0000";
-            this.mbDataDeNascimento.Name = "mbDataDeNascimento";
-            this.mbDataDeNascimento.Size = new System.Drawing.Size(96, 25);
-            this.mbDataDeNascimento.TabIndex = 39;
-            this.mbDataDeNascimento.ValidatingType = typeof(System.DateTime);
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(13, 118);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(166, 25);
-            this.label21.TabIndex = 38;
-            this.label21.Text = "Data de Nascimento";
             // 
             // mbTelefoneComercial
             // 
@@ -524,7 +506,7 @@
             // 
             this.mbTelefoneResidencial.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mbTelefoneResidencial.Location = new System.Drawing.Point(462, 41);
-            this.mbTelefoneResidencial.Mask = "(999) 000-0000";
+            this.mbTelefoneResidencial.Mask = "(000)00000-0000";
             this.mbTelefoneResidencial.Name = "mbTelefoneResidencial";
             this.mbTelefoneResidencial.Size = new System.Drawing.Size(118, 25);
             this.mbTelefoneResidencial.TabIndex = 33;
@@ -537,15 +519,6 @@
             this.label18.Size = new System.Drawing.Size(163, 25);
             this.label18.TabIndex = 32;
             this.label18.Text = "Telefone Residencial";
-            // 
-            // mbCPF
-            // 
-            this.mbCPF.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mbCPF.Location = new System.Drawing.Point(68, 84);
-            this.mbCPF.Mask = "000,000,000,00";
-            this.mbCPF.Name = "mbCPF";
-            this.mbCPF.Size = new System.Drawing.Size(118, 25);
-            this.mbCPF.TabIndex = 31;
             // 
             // label17
             // 
@@ -576,10 +549,11 @@
             // 
             // btnSalvar
             // 
+            this.btnSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSalvar.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(733, 553);
+            this.btnSalvar.Location = new System.Drawing.Point(686, 541);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(146, 45);
+            this.btnSalvar.Size = new System.Drawing.Size(158, 57);
             this.btnSalvar.TabIndex = 5;
             this.btnSalvar.Text = "Salvar\r\n\r\n\r\n\r\n";
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -587,28 +561,67 @@
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(581, 553);
+            this.button2.Location = new System.Drawing.Point(506, 541);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 45);
+            this.button2.Size = new System.Drawing.Size(158, 57);
             this.button2.TabIndex = 6;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(13, 118);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(166, 25);
+            this.label21.TabIndex = 38;
+            this.label21.Text = "Data de Nascimento";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(185, 118);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(102, 25);
+            this.dateTimePicker1.TabIndex = 41;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(727, 44);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(102, 25);
+            this.dateTimePicker2.TabIndex = 42;
+            // 
+            // mbCPF
+            // 
+            this.mbCPF.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mbCPF.Location = new System.Drawing.Point(68, 83);
+            this.mbCPF.Mask = "000,000,00,-00";
+            this.mbCPF.Name = "mbCPF";
+            this.mbCPF.Size = new System.Drawing.Size(118, 25);
+            this.mbCPF.TabIndex = 43;
             // 
             // CadastrarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(892, 613);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Name = "CadastrarCliente";
             this.Text = "CadastrarCliente";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.CadastrarCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -657,14 +670,10 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.MaskedTextBox mbTelefoneResidencial;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.MaskedTextBox mbCPF;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.MaskedTextBox mbRG;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.MaskedTextBox mbDataDoCadastro;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.MaskedTextBox mbDataDeNascimento;
-        private System.Windows.Forms.Label label21;
         private System.Windows.Forms.MaskedTextBox mbTelefoneComercial;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.MaskedTextBox mbTelefoneCelular;
@@ -673,5 +682,9 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.MaskedTextBox mbCPF;
     }
 }

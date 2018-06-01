@@ -66,6 +66,12 @@
     <Compile Include="Computadores.cs" />
     <Compile Include="Filial.cs" />
     <Compile Include="Funcionario.cs" />
+    <Compile Include="Horas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Horas.Designer.cs">
+      <DependentUpon>Horas.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelaCadastrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,12 +83,6 @@
     </Compile>
     <Compile Include="TelaCadastrarFuncionario.Designer.cs">
       <DependentUpon>TelaCadastrarFuncionario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TelaEditar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TelaEditar.Designer.cs">
-      <DependentUpon>TelaEditar.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaInicial.cs">
       <SubType>Form</SubType>
@@ -153,8 +153,13 @@
     <EmbeddedResource Include="CadastrarFIlial.resx">
       <DependentUpon>CadastrarFIlial.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Cadastrarjogosdetabuleiro.resx">
       <DependentUpon>Cadastrarjogosdetabuleiro.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Horas.resx">
+      <DependentUpon>Horas.cs</DependentUpon>
+>>>>>>> 923428488fffd3235d0334c15904424c464df0e2
     </EmbeddedResource>
     <EmbeddedResource Include="MenuComputadores.resx">
       <DependentUpon>MenuComputadores.cs</DependentUpon>
@@ -179,9 +184,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TelaCadastrarFuncionario.resx">
       <DependentUpon>TelaCadastrarFuncionario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TelaEditar.resx">
-      <DependentUpon>TelaEditar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>

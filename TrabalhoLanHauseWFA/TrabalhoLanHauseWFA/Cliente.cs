@@ -17,19 +17,16 @@ namespace TrabalhoLanHauseWFA
         public string Logradouro;
         public int Numero;
         public string Complemento;
-        public int CEP;
+        public double CEP;
         public string Bairro;
         public string Cidade;
         public string UF;
         public string Referencias;
-        public int RG;
-        public int CPF;
-        public int DataDeNascimento;
-        public int TelefoneResidencial;
-        public int TelefoneComercial;
-        public int TelefoneCelular;
-        public int DataDoCadastro;
-        public DateTime DataDaUltimaCompra;
+        public double RG;
+        public string CPF;
+        public string TelefoneResidencial;
+        public string TelefoneComercial;
+        public string TelefoneCelular;
         public string Email;
 
     }
