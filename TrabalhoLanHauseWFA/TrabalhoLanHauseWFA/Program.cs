@@ -9,6 +9,7 @@ namespace TrabalhoLanHauseWFA
     static class Program
     {
         public static List<Cliente> clientes = new List<Cliente>();
+        public static List<Jogos> jogos = new List<Jogos>();
         public static List<Funcionario> funcionario = new List<Funcionario>();
         public static List<Filial> filial = new List<Filial>();
         public static List<JogosDeTabuleiro> jogosTabuleiros = new List<JogosDeTabuleiro>();
