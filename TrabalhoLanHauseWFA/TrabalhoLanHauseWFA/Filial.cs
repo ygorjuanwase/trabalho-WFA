@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabalhoLanHauseWFA
 {
-    class Filial
+    public class Filial
     {
          public string NomeFilial;
          public string Bairro;
@@ -15,8 +15,8 @@ namespace TrabalhoLanHauseWFA
          public string Email;
          public string Responsavel;
          public string Endereco;
-         public string CNPJ;
-         public string CEP;
+         public int  CNPJ;
+         public int CEP;
          
     }
 }

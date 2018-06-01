@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnResponsavel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -36,9 +39,6 @@
             this.button5 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnResponsavel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,6 +56,27 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(969, 319);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // ColumnNome
+            // 
+            this.ColumnNome.HeaderText = "Nome Da Filial";
+            this.ColumnNome.Name = "ColumnNome";
+            this.ColumnNome.ReadOnly = true;
+            this.ColumnNome.Width = 475;
+            // 
+            // ColumnEndereco
+            // 
+            this.ColumnEndereco.HeaderText = "Endereco";
+            this.ColumnEndereco.Name = "ColumnEndereco";
+            this.ColumnEndereco.ReadOnly = true;
+            this.ColumnEndereco.Width = 200;
+            // 
+            // ColumnResponsavel
+            // 
+            this.ColumnResponsavel.HeaderText = "Responsavel";
+            this.ColumnResponsavel.Name = "ColumnResponsavel";
+            this.ColumnResponsavel.ReadOnly = true;
+            this.ColumnResponsavel.Width = 250;
             // 
             // button1
             // 
@@ -78,6 +99,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Atualizar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -131,32 +153,11 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Menu fiial";
             // 
-            // ColumnNome
-            // 
-            this.ColumnNome.HeaderText = "Nome Da Filial";
-            this.ColumnNome.Name = "ColumnNome";
-            this.ColumnNome.ReadOnly = true;
-            this.ColumnNome.Width = 475;
-            // 
-            // ColumnEndereco
-            // 
-            this.ColumnEndereco.HeaderText = "Endereco";
-            this.ColumnEndereco.Name = "ColumnEndereco";
-            this.ColumnEndereco.ReadOnly = true;
-            this.ColumnEndereco.Width = 200;
-            // 
-            // ColumnResponsavel
-            // 
-            this.ColumnResponsavel.HeaderText = "Responsavel";
-            this.ColumnResponsavel.Name = "ColumnResponsavel";
-            this.ColumnResponsavel.ReadOnly = true;
-            this.ColumnResponsavel.Width = 250;
-            // 
             // MenuFilialcs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1069, 603);
+            this.ClientSize = new System.Drawing.Size(1136, 603);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button5);
@@ -167,6 +168,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "MenuFilialcs";
             this.Text = "MenuFilialcs";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

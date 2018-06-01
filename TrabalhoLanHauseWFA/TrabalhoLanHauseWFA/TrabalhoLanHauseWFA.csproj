@@ -153,14 +153,14 @@
     <EmbeddedResource Include="CadastrarFIlial.resx">
       <DependentUpon>CadastrarFIlial.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
+
     <EmbeddedResource Include="Cadastrarjogosdetabuleiro.resx">
       <DependentUpon>Cadastrarjogosdetabuleiro.cs</DependentUpon>
-=======
+    </EmbeddedResource>
     <EmbeddedResource Include="Horas.resx">
       <DependentUpon>Horas.cs</DependentUpon>
->>>>>>> 923428488fffd3235d0334c15904424c464df0e2
-    </EmbeddedResource>
+	</EmbeddedResource>
+
     <EmbeddedResource Include="MenuComputadores.resx">
       <DependentUpon>MenuComputadores.cs</DependentUpon>
     </EmbeddedResource>
