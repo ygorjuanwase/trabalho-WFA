@@ -26,8 +26,8 @@ namespace TrabalhoLanHauseWFA
             mtbTelefone.Text = filial.Telefone;
             txtEmail.Text = filial.Email;
             txtResponsavel.Text = filial.Responsavel;
-            txtCNPJ.Text = filial.CNPJ;
-            txtCEp.Text = filial.CEP;
+            txtCNPJ.Text = Convert.ToString(filial.CNPJ);
+            txtCEp.Text = Convert.ToString(filial.CEP);
             
 
         }
@@ -87,16 +87,47 @@ namespace TrabalhoLanHauseWFA
                 txtCEp.Focus();
                 return;
             }
+            Filial filial = new Filial()
+            {
+                NomeFilial = txtNomeDaFilial.Text.ToLower(),
+                Bairro = txtBairro.Text.ToLower(),
+                Pais = cbPais.SelectedItem.ToString(),
+                Telefone = mtbTelefone.Text,
+                Email = txtEmail.Text.ToLower(),
+                Responsavel = txtResponsavel.Text.ToLower(),
+                Endereco = txtEndereco.Text.ToLower(),
+                CNPJ = Convert.ToInt32(txtCNPJ.Text),
+                CEP = Convert.ToInt32(txtCEp.Text)
+            };
+            if (posicao >= 0)
+            {
+                Program.filial[posicao] = filial;
+                MessageBox.Show("cadastro realizado com sucesso");
 
+            }
+            else
+            {
+                Program.filial.Add(filial);
+                MessageBox.Show("cadastro realizado com sucesso");
+            }
 
-
+            LimparCampos();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+
+        private void LimparCampos()
         {
-            Dispose();
+            txtNomeDaFilial.Text = "" ;
+            txtBairro.Text = "" ;
+            cbPais.SelectedIndex = -1 ;
+            mtbTelefone.Text = "" ;
+            txtEmail.Text = "" ;
+            txtResponsavel.Text = "" ;
+            txtCNPJ.Text = "" ;
+            txtCEp.Text = "" ;
         }
 
+       
         private void txtNomeDaFilial_TextChanged(object sender, EventArgs e)
         {
 
@@ -122,10 +153,13 @@ namespace TrabalhoLanHauseWFA
         {
             if (cbPais.SelectedIndex < 0)
             {
-                MessageBox.Show()
+                
             }
         }
-
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
         private void txtEmail_TextChanged(object sender, EventArgs e)
         {
 

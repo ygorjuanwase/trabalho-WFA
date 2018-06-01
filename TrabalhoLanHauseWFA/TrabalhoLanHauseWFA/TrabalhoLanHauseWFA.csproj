@@ -72,6 +72,7 @@
     <Compile Include="Horas.Designer.cs">
       <DependentUpon>Horas.cs</DependentUpon>
     </Compile>
+    <Compile Include="JogosDeTabuleiro.cs" />
     <Compile Include="TelaCadastrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,22 +154,15 @@
     <EmbeddedResource Include="CadastrarFIlial.resx">
       <DependentUpon>CadastrarFIlial.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="Cadastrarjogosdetabuleiro.resx">
       <DependentUpon>Cadastrarjogosdetabuleiro.cs</DependentUpon>
-
-	</EmbeddedResource>
-    <EmbeddedResource Include="Horas.resx">
-      <DependentUpon>Horas.cs</DependentUpon>
-
     </EmbeddedResource>
-
-    
     <EmbeddedResource Include="Horas.resx">
       <DependentUpon>Horas.cs</DependentUpon>
-	</EmbeddedResource>
-
-
+    </EmbeddedResource>
+    <EmbeddedResource Include="Horas.resx">
+      <DependentUpon>Horas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuComputadores.resx">
       <DependentUpon>MenuComputadores.cs</DependentUpon>
     </EmbeddedResource>

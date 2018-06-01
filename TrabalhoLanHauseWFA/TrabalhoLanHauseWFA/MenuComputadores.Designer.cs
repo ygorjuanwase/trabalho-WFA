@@ -190,7 +190,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(968, 515);
+            this.ClientSize = new System.Drawing.Size(892, 613);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
@@ -200,7 +200,9 @@
             this.Controls.Add(this.btncadastrar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
+            this.MinimizeBox = false;
             this.Name = "MenuComputadores";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuComputadores";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

@@ -36,14 +36,24 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCriador = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnQuantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(44, 224);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnNome,
+            this.ColumnCriador,
+            this.ColumnQuantidade});
+            this.dataGridView1.Location = new System.Drawing.Point(46, 227);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(902, 338);
             this.dataGridView1.TabIndex = 0;
             // 
@@ -65,6 +75,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Editar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox1
             // 
@@ -72,6 +83,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(395, 20);
             this.textBox1.TabIndex = 3;
+            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
             // button3
             // 
@@ -81,6 +93,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "Apagar";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -90,6 +103,7 @@
             this.button4.TabIndex = 5;
             this.button4.Text = "Atualizar";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -110,11 +124,32 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Menu Jogos de Tabuleiro";
             // 
+            // ColumnNome
+            // 
+            this.ColumnNome.HeaderText = "Nome Do Jogo";
+            this.ColumnNome.Name = "ColumnNome";
+            this.ColumnNome.ReadOnly = true;
+            this.ColumnNome.Width = 300;
+            // 
+            // ColumnCriador
+            // 
+            this.ColumnCriador.HeaderText = "Nome do Criador";
+            this.ColumnCriador.Name = "ColumnCriador";
+            this.ColumnCriador.ReadOnly = true;
+            this.ColumnCriador.Width = 300;
+            // 
+            // ColumnQuantidade
+            // 
+            this.ColumnQuantidade.HeaderText = "Quantidade De Jogodores";
+            this.ColumnQuantidade.Name = "ColumnQuantidade";
+            this.ColumnQuantidade.ReadOnly = true;
+            this.ColumnQuantidade.Width = 270;
+            // 
             // MenuJogosDeTabuleiro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1020, 574);
+            this.ClientSize = new System.Drawing.Size(892, 613);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -123,7 +158,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
+            this.MinimizeBox = false;
             this.Name = "MenuJogosDeTabuleiro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuJogosDeTabuleiro";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -141,5 +178,8 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCriador;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnQuantidade;
     }
 }

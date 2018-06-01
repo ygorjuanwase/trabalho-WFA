@@ -185,11 +185,10 @@
             // 
             this.cbPais.FormattingEnabled = true;
             this.cbPais.Items.AddRange(new object[] {
-            " ",
-            " AL ",
-            " AP ",
-            " AM ",
-            " BA ",
+            "AL  ",
+            "AP ",
+            "AM ",
+            "BA ",
             " CE ",
             " DF ",
             " ES ",

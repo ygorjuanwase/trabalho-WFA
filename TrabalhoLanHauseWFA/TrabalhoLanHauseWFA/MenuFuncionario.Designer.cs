@@ -156,7 +156,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1110, 613);
+            this.ClientSize = new System.Drawing.Size(892, 613);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.txtBusca);
             this.Controls.Add(this.button4);
@@ -165,9 +165,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dtgFuncionario);
+            this.MinimizeBox = false;
             this.Name = "MenuFuncionario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuFuncionario";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MenuFuncionario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgFuncionario)).EndInit();
             this.ResumeLayout(false);

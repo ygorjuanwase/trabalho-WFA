@@ -66,7 +66,60 @@ namespace TrabalhoLanHauseWFA
         {
             MenuComputadores computadores = new MenuComputadores();
             computadores.Show();
-            Dispose();
+            if (txtMarca.Text.Length < 5)
+            {
+                MessageBox.Show("Nome deve apresentar mais de 5 letras");
+                txtMarca.Focus();
+                return;
+            }
+            if (txtTa.Text.Length <= 5)
+            {
+                MessageBox.Show("Nome do criador deve conter mais de 5 leras");
+                txtCriadorJogo.Focus();
+                return;
+            }
+            if (txtQuantidadeJogadores.Text.Length == 0)
+            {
+                MessageBox.Show("Quantidade de jogadores Deve ser preenchido.");
+                txtQuantidadeJogadores.Focus();
+                return;
+            }
+            if (cbEstiloJogo.SelectedIndex < 0)
+            {
+                MessageBox.Show("Estilo do jogo deve ser preenchido");
+                cbEstiloJogo.DroppedDown = true;
+                return;
+            }
+            if (cbEstiloTAbuleiro.SelectedIndex < 0)
+            {
+                MessageBox.Show("estilo de tabuleiro deve ser preenchido");
+                cbEstiloTAbuleiro.DroppedDown = true;
+                return;
+            }
+
+            JogosDeTabuleiro jogostabuleiro = new JogosDeTabuleiro()
+            {
+                NomeDoJogo = txtNomeDoJogo.Text.ToLower(),
+                AnoDeFabricacao = mtbAnoFabricacao.Text,
+                CriadorDoJogo = txtCriadorJogo.Text.ToLower(),
+                QuantidadeDeJogadores = Convert.ToInt32(txtQuantidadeJogadores.Text),
+                EstilodoJogo = cbEstiloJogo.SelectedItem.ToString(),
+                EstiloDoTabuleiro = cbEstiloTAbuleiro.SelectedItem.ToString(),
+                sim = radioButton1.Checked
+            };
+            if (posicao >= 0)
+            {
+                Program.jogosTabuleiros[posicao] = jogostabuleiro;
+                MessageBox.Show("Cadastro realizado com sucesso");
+            }
+            else
+            {
+                Program.jogosTabuleiros.Add(jogostabuleiro);
+                MessageBox.Show("Cadastro realizado com sucesso");
+            }
+
+            LimparCampos();
+            
         }
 
         private void txtMarca_TextChanged_1(object sender, EventArgs e)
