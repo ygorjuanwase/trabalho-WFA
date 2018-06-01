@@ -16,5 +16,13 @@ namespace TrabalhoLanHauseWFA
         {
             InitializeComponent();
         }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            CadastrarGames games = new CadastrarGames();
+            games.Show();
+            
+
+        }
     }
 }

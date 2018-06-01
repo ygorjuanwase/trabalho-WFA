@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace TrabalhoLanHauseWFA
 {
-    class Jogos
+    public class Jogos
     {
+        public string Nome;
+        public string Genero;
+        public string Plataforma;
+        public string Descricao;
+        public int Classificacao;
+        public int Players;
+        public double valor;
+        public DateTime DataLancamento;
+
     }
 }

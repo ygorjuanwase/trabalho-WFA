@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace TrabalhoLanHauseWFA
 {
-    public partial class Horas : Form
+    public partial class CadastrarGames : Form
     {
-        public Horas()
+        public CadastrarGames()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
