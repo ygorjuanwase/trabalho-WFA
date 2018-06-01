@@ -30,8 +30,7 @@ namespace TrabalhoLanHauseWFA
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            TelaEditar editar = new TelaEditar();
-            editar.Show();
+           
         }
 
         private void button2_Click(object sender, EventArgs e)

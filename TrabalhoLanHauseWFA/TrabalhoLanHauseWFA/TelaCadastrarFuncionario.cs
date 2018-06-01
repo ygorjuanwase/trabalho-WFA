@@ -83,5 +83,15 @@ namespace TrabalhoLanHauseWFA
 
 
         }
+
+        private void TelaCadastrarFuncionario_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mtbDatadenascimento_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
     }
 }
