@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace TrabalhoLanHauseWFA
 {
-    public partial class MenuJogosDeTabuleiro : Form
+    public partial class Cadastrarjogosdetabuleiro : Form
     {
-        public MenuJogosDeTabuleiro()
+        public Cadastrarjogosdetabuleiro()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void label6_Click(object sender, EventArgs e)
         {
-            Cadastrarjogosdetabuleiro cadastrarjogostabuleiro = new Cadastrarjogosdetabuleiro();
-            cadastrarjogostabuleiro.Show();
+
         }
     }
 }

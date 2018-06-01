@@ -56,6 +56,12 @@
     <Compile Include="CadastrarFIlial.Designer.cs">
       <DependentUpon>CadastrarFIlial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cadastrarjogosdetabuleiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastrarjogosdetabuleiro.Designer.cs">
+      <DependentUpon>Cadastrarjogosdetabuleiro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cliente.cs" />
     <Compile Include="Computadores.cs" />
     <Compile Include="Filial.cs" />
@@ -146,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastrarFIlial.resx">
       <DependentUpon>CadastrarFIlial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastrarjogosdetabuleiro.resx">
+      <DependentUpon>Cadastrarjogosdetabuleiro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuComputadores.resx">
       <DependentUpon>MenuComputadores.cs</DependentUpon>
