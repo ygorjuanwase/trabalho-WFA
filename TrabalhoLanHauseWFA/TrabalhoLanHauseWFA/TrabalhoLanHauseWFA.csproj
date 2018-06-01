@@ -60,6 +60,12 @@
     <Compile Include="Computadores.cs" />
     <Compile Include="Filial.cs" />
     <Compile Include="Funcionario.cs" />
+    <Compile Include="Horas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Horas.Designer.cs">
+      <DependentUpon>Horas.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelaCadastrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastrarFIlial.resx">
       <DependentUpon>CadastrarFIlial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Horas.resx">
+      <DependentUpon>Horas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuComputadores.resx">
       <DependentUpon>MenuComputadores.cs</DependentUpon>

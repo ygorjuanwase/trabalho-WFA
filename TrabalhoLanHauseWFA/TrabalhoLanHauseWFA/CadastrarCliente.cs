@@ -140,8 +140,7 @@ namespace TrabalhoLanHauseWFA
                 UF = mbUF.Text,
                 Referencias = txtReferencias.Text,
                 RG = Convert.ToDouble(mbRG.Text),
-                CPF = mbCPF.Text,
-               
+                CPF = mbCPF.Text,              
                 Email = txtEmail.Text
             };
 
@@ -155,11 +154,38 @@ namespace TrabalhoLanHauseWFA
                 Program.clientes.Add(cliente);
                 MessageBox.Show("Cadastro realizado com sucesso");
             }
+
+            LimparCampos();
+        }
+        private void LimparCampos()
+        {
+                txtNome.Text = "";
+                txtSobrenome.Text = "";
+                txtNomeUsuario.Text = "";
+                txtSenha.Text = "";
+                txtComfirmarSenha.Text = "";
+                cbSexo.SelectedItem = -1;
+                txtLogradouro.Text = "";
+                txtNumero.Text = "";
+                txtComplemento.Text = "";
+                mbCEP.Text = "";
+                txtBairro.Text = "";
+                txtCidade.Text = "";
+                mbUF.Text = "";
+                txtReferencias.Text = "";
+                mbRG.Text = "";
+                mbCPF.Text = "";
+                txtEmail.Text = "";
         }
 
         private void CadastrarCliente_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Dispose();
         }
 
       
