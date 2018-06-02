@@ -24,14 +24,14 @@ namespace TrabalhoLanHauseWFA
         private void AtualizarLista()
         {
             dataGridView1.Rows.Clear();
-            string busca  = textBox1.Text.ToLower().Trim();
+            string busca = textBox1.Text.ToLower().Trim();
             for (int i = 0; i < Program.jogosTabuleiros.Count; i++)
             {
                 JogosDeTabuleiro jogosTabuleiros = Program.jogosTabuleiros[i];
-                if (jogosTabuleiros.sim == true && (jogosTabuleiros.NomeDoJogo.Contains(busca) || (jogosTabuleiros.CriadorDoJogo.Contains( busca))))
+                if (jogosTabuleiros.sim == true && (jogosTabuleiros.NomeDoJogo.Contains(busca) || (jogosTabuleiros.CriadorDoJogo.Contains(busca))))
                 {
 
-                dataGridView1.Rows.Add(new object[]{
+                    dataGridView1.Rows.Add(new object[]{
                    jogosTabuleiros.NomeDoJogo,jogosTabuleiros.CriadorDoJogo, jogosTabuleiros.QuantidadeDeJogadores 
 
                 });
@@ -69,15 +69,18 @@ namespace TrabalhoLanHauseWFA
 
         private void button2_Click(object sender, EventArgs e)
         {
-             if(dataGridView1.CurrentRow == null)
+            if (dataGridView1.CurrentRow == null)
             {
                 MessageBox.Show("Não tem nenhum Nome selecionado");
                 return;
             }
 
             int linhaSelecionada = dataGridView1.CurrentRow.Index;
-            JogosDeTabuleiro jogosTabuleiros = Program.jogosTabuleiros[linhaSelecionada];
-            new (jogosTabuleiros, linhaSelecionada).ShowDialog();
+            JogosDeTabuleiro tabuleiro = Program.jogosTabuleiros[linhaSelecionada];
+            new Cadastrarjogosdetabuleiro(tabuleiro, linhaSelecionada).ShowDialog();
+
+
+
         }
 
         private void textBox1_KeyDown(object sender, KeyEventArgs e)

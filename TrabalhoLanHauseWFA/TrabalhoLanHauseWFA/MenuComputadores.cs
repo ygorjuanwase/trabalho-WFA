@@ -33,12 +33,11 @@ namespace TrabalhoLanHauseWFA
             int linhaSelecionada = dataGridView1.CurrentRow.Index;
 
             JogosDeTabuleiro jogosTabuleiros = Program.jogosTabuleiros[linhaSelecionada];
-            DialogResult resultado = MessageBox.Show("Deseja apagar " +  + " o registro?", "AVISO", MessageBoxButtons.YesNo);
+            DialogResult resultado = MessageBox.Show("Deseja apagar " +   " o registro?", "AVISO", MessageBoxButtons.YesNo);
             if (resultado == DialogResult.Yes)
             {
 
                 Program.jogosTabuleiros.RemoveAt(linhaSelecionada);
-                AtualizarLista();
                 MessageBox.Show("Registro apagado com seucesso");
             }
             else
