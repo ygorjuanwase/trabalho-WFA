@@ -33,6 +33,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ColumnNomee = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSenha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -40,9 +43,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.ColumnNomee = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnSenha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -59,6 +59,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Voltar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -99,6 +100,27 @@
             this.dataGridView1.Size = new System.Drawing.Size(868, 446);
             this.dataGridView1.TabIndex = 3;
             // 
+            // ColumnNomee
+            // 
+            this.ColumnNomee.HeaderText = "Nome";
+            this.ColumnNomee.Name = "ColumnNomee";
+            this.ColumnNomee.ReadOnly = true;
+            this.ColumnNomee.Width = 280;
+            // 
+            // ColumnNome
+            // 
+            this.ColumnNome.HeaderText = "Nome do usuário";
+            this.ColumnNome.Name = "ColumnNome";
+            this.ColumnNome.ReadOnly = true;
+            this.ColumnNome.Width = 280;
+            // 
+            // ColumnSenha
+            // 
+            this.ColumnSenha.HeaderText = "Senha";
+            this.ColumnSenha.Name = "ColumnSenha";
+            this.ColumnSenha.ReadOnly = true;
+            this.ColumnSenha.Width = 280;
+            // 
             // txtBuscar
             // 
             this.txtBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -106,7 +128,6 @@
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(243, 20);
             this.txtBuscar.TabIndex = 4;
-            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             this.txtBuscar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBuscar_KeyDown);
             // 
             // btnAtualizar
@@ -163,6 +184,7 @@
             this.button2.TabIndex = 9;
             this.button2.Text = "Apagar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox1
             // 
@@ -183,27 +205,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
-            // 
-            // ColumnNomee
-            // 
-            this.ColumnNomee.HeaderText = "Nome";
-            this.ColumnNomee.Name = "ColumnNomee";
-            this.ColumnNomee.ReadOnly = true;
-            this.ColumnNomee.Width = 280;
-            // 
-            // ColumnNome
-            // 
-            this.ColumnNome.HeaderText = "Nome do usuário";
-            this.ColumnNome.Name = "ColumnNome";
-            this.ColumnNome.ReadOnly = true;
-            this.ColumnNome.Width = 280;
-            // 
-            // ColumnSenha
-            // 
-            this.ColumnSenha.HeaderText = "Senha";
-            this.ColumnSenha.Name = "ColumnSenha";
-            this.ColumnSenha.ReadOnly = true;
-            this.ColumnSenha.Width = 280;
             // 
             // MenuCliente
             // 

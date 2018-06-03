@@ -114,5 +114,10 @@ namespace TrabalhoLanHauseWFA
             Dispose();
         }
 
+        private void Cadastrarjogosdetabuleiro_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

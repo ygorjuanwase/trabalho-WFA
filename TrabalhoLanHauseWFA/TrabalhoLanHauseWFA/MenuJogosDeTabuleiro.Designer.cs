@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCriador = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnQuantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -36,9 +39,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnCriador = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnQuantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,11 +51,32 @@
             this.ColumnNome,
             this.ColumnCriador,
             this.ColumnQuantidade});
-            this.dataGridView1.Location = new System.Drawing.Point(46, 227);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 227);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(902, 338);
+            this.dataGridView1.Size = new System.Drawing.Size(936, 338);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // ColumnNome
+            // 
+            this.ColumnNome.HeaderText = "Nome Do Jogo";
+            this.ColumnNome.Name = "ColumnNome";
+            this.ColumnNome.ReadOnly = true;
+            this.ColumnNome.Width = 300;
+            // 
+            // ColumnCriador
+            // 
+            this.ColumnCriador.HeaderText = "Nome do Criador";
+            this.ColumnCriador.Name = "ColumnCriador";
+            this.ColumnCriador.ReadOnly = true;
+            this.ColumnCriador.Width = 300;
+            // 
+            // ColumnQuantidade
+            // 
+            this.ColumnQuantidade.HeaderText = "Quantidade De Jogodores";
+            this.ColumnQuantidade.Name = "ColumnQuantidade";
+            this.ColumnQuantidade.ReadOnly = true;
+            this.ColumnQuantidade.Width = 270;
             // 
             // button1
             // 
@@ -79,9 +100,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(152, 198);
+            this.textBox1.Location = new System.Drawing.Point(120, 198);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(395, 20);
+            this.textBox1.Size = new System.Drawing.Size(427, 20);
             this.textBox1.TabIndex = 3;
             this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
@@ -107,7 +128,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(44, 173);
+            this.button5.Location = new System.Drawing.Point(12, 173);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(102, 48);
             this.button5.TabIndex = 6;
@@ -124,32 +145,11 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Menu Jogos de Tabuleiro";
             // 
-            // ColumnNome
-            // 
-            this.ColumnNome.HeaderText = "Nome Do Jogo";
-            this.ColumnNome.Name = "ColumnNome";
-            this.ColumnNome.ReadOnly = true;
-            this.ColumnNome.Width = 300;
-            // 
-            // ColumnCriador
-            // 
-            this.ColumnCriador.HeaderText = "Nome do Criador";
-            this.ColumnCriador.Name = "ColumnCriador";
-            this.ColumnCriador.ReadOnly = true;
-            this.ColumnCriador.Width = 300;
-            // 
-            // ColumnQuantidade
-            // 
-            this.ColumnQuantidade.HeaderText = "Quantidade De Jogodores";
-            this.ColumnQuantidade.Name = "ColumnQuantidade";
-            this.ColumnQuantidade.ReadOnly = true;
-            this.ColumnQuantidade.Width = 270;
-            // 
             // MenuJogosDeTabuleiro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(892, 613);
+            this.ClientSize = new System.Drawing.Size(959, 613);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);

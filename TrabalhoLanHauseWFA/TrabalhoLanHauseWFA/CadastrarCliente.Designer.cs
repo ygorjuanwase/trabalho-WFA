@@ -69,7 +69,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.cbSexo = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtComfirmarSenha = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.TextBox();
@@ -80,6 +79,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -97,6 +99,7 @@
             this.button2.TabIndex = 11;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // btnSalvar
             // 
@@ -109,6 +112,7 @@
             this.btnSalvar.TabIndex = 10;
             this.btnSalvar.Text = "Salvar\r\n\r\n\r\n\r\n";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click_1);
             // 
             // groupBox2
             // 
@@ -144,7 +148,7 @@
             // 
             this.mbCPF.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mbCPF.Location = new System.Drawing.Point(68, 83);
-            this.mbCPF.Mask = "000,000,00,-00";
+            this.mbCPF.Mask = "000,000,00-00";
             this.mbCPF.Name = "mbCPF";
             this.mbCPF.Size = new System.Drawing.Size(118, 25);
             this.mbCPF.TabIndex = 43;
@@ -369,7 +373,7 @@
             // txtBairro
             // 
             this.txtBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBairro.Location = new System.Drawing.Point(222, 76);
+            this.txtBairro.Location = new System.Drawing.Point(234, 75);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(194, 26);
             this.txtBairro.TabIndex = 21;
@@ -459,6 +463,8 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.cbSexo);
             this.groupBox1.Controls.Add(this.label6);
@@ -492,6 +498,7 @@
             // 
             // cbSexo
             // 
+            this.cbSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSexo.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSexo.FormattingEnabled = true;
             this.cbSexo.Items.AddRange(new object[] {
@@ -511,17 +518,6 @@
             this.label6.Size = new System.Drawing.Size(47, 25);
             this.label6.TabIndex = 10;
             this.label6.Text = "Sexo";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(713, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(167, 166);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // txtComfirmarSenha
             // 
@@ -560,7 +556,7 @@
             // txtNomeUsuario
             // 
             this.txtNomeUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeUsuario.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.txtNomeUsuario.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtNomeUsuario.Location = new System.Drawing.Point(159, 69);
             this.txtNomeUsuario.Name = "txtNomeUsuario";
             this.txtNomeUsuario.Size = new System.Drawing.Size(225, 26);
@@ -608,6 +604,40 @@
             this.label1.Size = new System.Drawing.Size(55, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(713, 17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(167, 166);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(580, 102);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(41, 36);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "\r\n";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button3
+            // 
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(580, 102);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(41, 36);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "\r\n";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Visible = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // CadastrarCliente
             // 
@@ -691,6 +721,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button1;
 
 
 

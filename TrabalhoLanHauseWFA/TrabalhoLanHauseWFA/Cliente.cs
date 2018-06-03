@@ -17,7 +17,7 @@ namespace TrabalhoLanHauseWFA
         public string Logradouro;
         public int Numero;
         public string Complemento;
-        public double CEP;
+        public string CEP;
         public string Bairro;
         public string Cidade;
         public string UF;
@@ -28,6 +28,8 @@ namespace TrabalhoLanHauseWFA
         public string TelefoneComercial;
         public string TelefoneCelular;
         public string Email;
+        public DateTime DataDoCadastro;
+        public DateTime DataNascimento;
 
     }
 }

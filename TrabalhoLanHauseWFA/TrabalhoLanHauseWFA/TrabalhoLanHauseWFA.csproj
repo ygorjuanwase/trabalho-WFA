@@ -51,6 +51,12 @@
     <Compile Include="CadastrarCliente.Designer.cs">
       <DependentUpon>CadastrarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastrarConsoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarConsoles.Designer.cs">
+      <DependentUpon>CadastrarConsoles.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastrarFIlial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,7 @@
     </Compile>
     <Compile Include="Cliente.cs" />
     <Compile Include="Computadores.cs" />
+    <Compile Include="Consoles.cs" />
     <Compile Include="Filial.cs" />
     <Compile Include="Funcionario.cs" />
     <Compile Include="JogosDeTabuleiro.cs" />
@@ -152,6 +159,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CadastrarCliente.resx">
       <DependentUpon>CadastrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarConsoles.resx">
+      <DependentUpon>CadastrarConsoles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastrarFIlial.resx">
       <DependentUpon>CadastrarFIlial.cs</DependentUpon>

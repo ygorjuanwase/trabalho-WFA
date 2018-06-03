@@ -49,6 +49,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.cbClassificacao = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -183,7 +185,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label8.Location = new System.Drawing.Point(546, 113);
+            this.label8.Location = new System.Drawing.Point(536, 114);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(170, 25);
             this.label8.TabIndex = 16;
@@ -196,6 +198,8 @@
             this.dtpDataLancamento.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDataLancamento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDataLancamento.Location = new System.Drawing.Point(722, 113);
+            this.dtpDataLancamento.MaxDate = new System.DateTime(2018, 12, 25, 23, 59, 59, 0);
+            this.dtpDataLancamento.MinDate = new System.DateTime(1950, 12, 1, 0, 0, 0, 0);
             this.dtpDataLancamento.Name = "dtpDataLancamento";
             this.dtpDataLancamento.Size = new System.Drawing.Size(122, 25);
             this.dtpDataLancamento.TabIndex = 17;
@@ -231,6 +235,7 @@
             this.button2.TabIndex = 21;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -262,12 +267,33 @@
             this.cbClassificacao.Size = new System.Drawing.Size(132, 28);
             this.cbClassificacao.TabIndex = 23;
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(722, 179);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(147, 26);
+            this.textBox1.TabIndex = 25;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label10.Location = new System.Drawing.Point(536, 179);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(190, 25);
+            this.label10.TabIndex = 24;
+            this.label10.Text = "Quantidade em Estóque";
+            // 
             // CadastrarGames
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(892, 613);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.cbClassificacao);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
@@ -290,6 +316,7 @@
             this.Controls.Add(this.pictureBox1);
             this.MaximizeBox = false;
             this.Name = "CadastrarGames";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Games";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -319,5 +346,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox cbClassificacao;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label10;
     }
 }

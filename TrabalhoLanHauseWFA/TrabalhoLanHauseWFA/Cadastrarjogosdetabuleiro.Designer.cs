@@ -50,11 +50,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic);
             this.label1.ForeColor = System.Drawing.Color.DarkBlue;
             this.label1.Location = new System.Drawing.Point(31, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 18);
+            this.label1.Size = new System.Drawing.Size(120, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome Do Jogo";
             // 
@@ -74,6 +74,8 @@
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic);
+            this.button1.ForeColor = System.Drawing.Color.DarkBlue;
             this.button1.Location = new System.Drawing.Point(714, 297);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 38);
@@ -92,55 +94,55 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic);
             this.label2.ForeColor = System.Drawing.Color.DarkBlue;
             this.label2.Location = new System.Drawing.Point(31, 98);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 18);
+            this.label2.Size = new System.Drawing.Size(150, 25);
             this.label2.TabIndex = 4;
             this.label2.Text = "Ano de Fabricação";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic);
             this.label3.ForeColor = System.Drawing.Color.DarkBlue;
             this.label3.Location = new System.Drawing.Point(31, 178);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 18);
+            this.label3.Size = new System.Drawing.Size(125, 25);
             this.label3.TabIndex = 5;
             this.label3.Text = "Criador do Jogo";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic);
             this.label4.ForeColor = System.Drawing.Color.DarkBlue;
             this.label4.Location = new System.Drawing.Point(495, 24);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(175, 18);
+            this.label4.Size = new System.Drawing.Size(196, 25);
             this.label4.TabIndex = 6;
             this.label4.Text = "Quantidade de Jogadores";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic);
             this.label5.ForeColor = System.Drawing.Color.DarkBlue;
             this.label5.Location = new System.Drawing.Point(509, 98);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 18);
+            this.label5.Size = new System.Drawing.Size(116, 25);
             this.label5.TabIndex = 7;
             this.label5.Text = "Estilo do Jogo";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic);
             this.label6.ForeColor = System.Drawing.Color.DarkBlue;
             this.label6.Location = new System.Drawing.Point(495, 176);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(137, 18);
+            this.label6.Size = new System.Drawing.Size(154, 25);
             this.label6.TabIndex = 8;
             this.label6.Text = "Estilo do Tabuleiro";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -148,11 +150,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic);
             this.label7.ForeColor = System.Drawing.Color.DarkBlue;
             this.label7.Location = new System.Drawing.Point(509, 218);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 18);
+            this.label7.Size = new System.Drawing.Size(54, 25);
             this.label7.TabIndex = 9;
             this.label7.Text = "dados";
             // 
@@ -193,9 +195,11 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic);
+            this.radioButton1.ForeColor = System.Drawing.Color.DarkBlue;
             this.radioButton1.Location = new System.Drawing.Point(638, 219);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(43, 17);
+            this.radioButton1.Size = new System.Drawing.Size(61, 29);
             this.radioButton1.TabIndex = 14;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "SIm";
@@ -204,9 +208,11 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic);
+            this.radioButton2.ForeColor = System.Drawing.Color.DarkBlue;
             this.radioButton2.Location = new System.Drawing.Point(782, 219);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(45, 17);
+            this.radioButton2.Size = new System.Drawing.Size(62, 29);
             this.radioButton2.TabIndex = 15;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Não";
@@ -214,6 +220,8 @@
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, System.Drawing.FontStyle.Italic);
+            this.button2.ForeColor = System.Drawing.Color.DarkBlue;
             this.button2.Location = new System.Drawing.Point(838, 297);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(118, 38);
@@ -235,6 +243,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1032, 554);
             this.Controls.Add(this.mtbAnoFabricacao);
             this.Controls.Add(this.button2);
@@ -255,6 +264,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Cadastrarjogosdetabuleiro";
             this.Text = "Cadastrarjogosdetabuleiro";
+            this.Load += new System.EventHandler(this.Cadastrarjogosdetabuleiro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
