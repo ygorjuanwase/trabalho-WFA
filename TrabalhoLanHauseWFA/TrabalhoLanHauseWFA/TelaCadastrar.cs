@@ -12,9 +12,10 @@ namespace TrabalhoLanHauseWFA
 {
     public partial class TelaCadastrar : Form
     {
+        int posicao = 0;
         public TelaCadastrar()
         {
-            
+
             InitializeComponent();
         }
 
@@ -22,10 +23,10 @@ namespace TrabalhoLanHauseWFA
         {
             AtualizarLista();
         }
-        
-        }
 
-       
+
+
+
         private void button2_Click(object sender, EventArgs e)
         {
             MenuComputadores computadores = new MenuComputadores();
@@ -36,7 +37,7 @@ namespace TrabalhoLanHauseWFA
                 txtMarca.Focus();
                 return;
             }
-<<<<<<< HEAD
+
             if (txtTamanhoDoCpu.Text.Length <= 5)
             {
                 MessageBox.Show("Tamanho da Cpu deve conter mais de 5 leras");
@@ -58,13 +59,13 @@ namespace TrabalhoLanHauseWFA
             if (txtPlacaDeVideo.Text.Length < 4)
             {
                 MessageBox.Show("placa de video deve conter mais de 4 letras");
-                
+
                 return;
             }
 
             JogosDeTabuleiro jogostabuleiro = new JogosDeTabuleiro()
             {
-              
+
             };
             if (posicao >= 0)
             {
@@ -78,10 +79,12 @@ namespace TrabalhoLanHauseWFA
             }
 
             LimparCampos();
-=======
-           
->>>>>>> e86814d8e93da467fe43007fcc0fd9876adc778c
-            
+
+
+        }
+
+        private void LimparCampos()
+        {
         }
 
         private void txtMarca_TextChanged_1(object sender, EventArgs e)
@@ -91,9 +94,9 @@ namespace TrabalhoLanHauseWFA
             Dispose();
         }
 
-       
 
-       
+
+
 
     }
 }

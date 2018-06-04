@@ -209,7 +209,6 @@
             this.txtProcessador.Name = "txtProcessador";
             this.txtProcessador.Size = new System.Drawing.Size(330, 20);
             this.txtProcessador.TabIndex = 15;
-            this.txtProcessador.TextChanged += new System.EventHandler(this.txtProcessador_TextChanged);
             // 
             // txtPlacaDeVideo
             // 
@@ -217,7 +216,6 @@
             this.txtPlacaDeVideo.Name = "txtPlacaDeVideo";
             this.txtPlacaDeVideo.Size = new System.Drawing.Size(330, 20);
             this.txtPlacaDeVideo.TabIndex = 16;
-            this.txtPlacaDeVideo.TextChanged += new System.EventHandler(this.txtPlacaDeVideo_TextChanged);
             // 
             // txtPlacaMae
             // 
@@ -225,7 +223,6 @@
             this.txtPlacaMae.Name = "txtPlacaMae";
             this.txtPlacaMae.Size = new System.Drawing.Size(349, 20);
             this.txtPlacaMae.TabIndex = 17;
-            this.txtPlacaMae.TextChanged += new System.EventHandler(this.txtPlacaMae_TextChanged);
             // 
             // maskedTextBox1
             // 

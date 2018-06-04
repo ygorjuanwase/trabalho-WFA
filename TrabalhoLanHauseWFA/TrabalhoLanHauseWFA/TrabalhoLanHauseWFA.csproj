@@ -62,6 +62,12 @@
     <Compile Include="CadastrarFIlial.Designer.cs">
       <DependentUpon>CadastrarFIlial.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastrarGames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarGames.Designer.cs">
+      <DependentUpon>CadastrarGames.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cadastrarjogosdetabuleiro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,17 +79,8 @@
     <Compile Include="Consoles.cs" />
     <Compile Include="Filial.cs" />
     <Compile Include="Funcionario.cs" />
-<<<<<<< HEAD
-    <Compile Include="Horas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Horas.Designer.cs">
-      <DependentUpon>Horas.cs</DependentUpon>
-    </Compile>
-=======
     <Compile Include="JogosDeTabuleiro.cs" />
     <Compile Include="Jogos.cs" />
->>>>>>> 25a20465af7210bf0447d6c8f9c0021d97f47f73
     <Compile Include="TelaCadastrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,31 +165,12 @@
     <EmbeddedResource Include="CadastrarFIlial.resx">
       <DependentUpon>CadastrarFIlial.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-
-    <EmbeddedResource Include="Cadastrarjogosdetabuleiro.resx">
-      <DependentUpon>Cadastrarjogosdetabuleiro.cs</DependentUpon>
-
-	</EmbeddedResource>
-    <EmbeddedResource Include="Horas.resx">
-      <DependentUpon>Horas.cs</DependentUpon>
-
-    </EmbeddedResource>
-
-    
-    <EmbeddedResource Include="Horas.resx">
-      <DependentUpon>Horas.cs</DependentUpon>
-	</EmbeddedResource>
-
-
-=======
-    <EmbeddedResource Include="Cadastrarjogosdetabuleiro.resx">
-      <DependentUpon>Cadastrarjogosdetabuleiro.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CadastrarGames.resx">
       <DependentUpon>CadastrarGames.cs</DependentUpon>
     </EmbeddedResource>
->>>>>>> 25a20465af7210bf0447d6c8f9c0021d97f47f73
+    <EmbeddedResource Include="Cadastrarjogosdetabuleiro.resx">
+      <DependentUpon>Cadastrarjogosdetabuleiro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuComputadores.resx">
       <DependentUpon>MenuComputadores.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuFuncionario.resx">
       <DependentUpon>MenuFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuJogos.resx">
+      <DependentUpon>MenuJogos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuJogosDeTabuleiro.resx">
       <DependentUpon>MenuJogosDeTabuleiro.cs</DependentUpon>
