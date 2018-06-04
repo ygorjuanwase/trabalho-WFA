@@ -22,51 +22,66 @@ namespace TrabalhoLanHauseWFA
         {
             AtualizarLista();
         }
-        private void txtMarca_TextChanged(object sender, EventArgs e)
-        {
-            string Marca = txtMarca.Text;
-            Marca = txtMarca.Text;
+        
         }
 
-        private void txtTamanhoDoCpu_TextChanged(object sender, EventArgs e)
-        {
-            int tamanhoCpu = 0;
-            try
-            {
-                tamanhoCpu = Convert.ToInt32(txtTamanhoDoCpu.Text);
-
-            }
-            catch
-            {
-                MessageBox.Show("TAmanho do CPU deve conter samente numeros reais.");
-                txtTamanhoDoCpu.Focus();
-                return;
-            }
-        }
-
-        private void txtProcessador_TextChanged(object sender, EventArgs e)
-        {
-            string processador = txtProcessador.Text;
-            processador = txtProcessador.Text;
-        }
-
-        private void txtPlacaDeVideo_TextChanged(object sender, EventArgs e)
-        {
-            string placaDeVideo = txtPlacaDeVideo.Text;
-            placaDeVideo = txtPlacaDeVideo.Text;
-        }
-
-        private void txtPlacaMae_TextChanged(object sender, EventArgs e)
-        {
-            string placaMae = txtPlacaMae.Text;
-            placaMae = txtPlacaMae.Text;
-        }
-
+       
         private void button2_Click(object sender, EventArgs e)
         {
             MenuComputadores computadores = new MenuComputadores();
             computadores.Show();
-            Dispose();
+            if (txtMarca.Text.Length < 5)
+            {
+                MessageBox.Show("Marca deve conter mais de 5 letras");
+                txtMarca.Focus();
+                return;
+            }
+<<<<<<< HEAD
+            if (txtTamanhoDoCpu.Text.Length <= 5)
+            {
+                MessageBox.Show("Tamanho da Cpu deve conter mais de 5 leras");
+                txtTamanhoDoCpu.Focus();
+                return;
+            }
+            if (cbMemoriaRan.SelectedIndex < 0)
+            {
+                MessageBox.Show("Memoria RAN Deve ser preenchido.");
+                cbMemoriaRan.Focus();
+                return;
+            }
+            if (txtProcessador.Text.Length < 4)
+            {
+                MessageBox.Show("processador deve conter mais de 4 letras");
+                txtProcessador.Focus();
+                return;
+            }
+            if (txtPlacaDeVideo.Text.Length < 4)
+            {
+                MessageBox.Show("placa de video deve conter mais de 4 letras");
+                
+                return;
+            }
+
+            JogosDeTabuleiro jogostabuleiro = new JogosDeTabuleiro()
+            {
+              
+            };
+            if (posicao >= 0)
+            {
+                Program.jogosTabuleiros[posicao] = jogostabuleiro;
+                MessageBox.Show("Cadastro realizado com sucesso");
+            }
+            else
+            {
+                Program.jogosTabuleiros.Add(jogostabuleiro);
+                MessageBox.Show("Cadastro realizado com sucesso");
+            }
+
+            LimparCampos();
+=======
+           
+>>>>>>> e86814d8e93da467fe43007fcc0fd9876adc778c
+            
         }
 
         private void txtMarca_TextChanged_1(object sender, EventArgs e)

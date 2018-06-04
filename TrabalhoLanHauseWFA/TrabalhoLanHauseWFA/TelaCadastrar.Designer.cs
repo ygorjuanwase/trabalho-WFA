@@ -213,7 +213,7 @@
             // 
             // txtPlacaDeVideo
             // 
-            this.txtPlacaDeVideo.Location = new System.Drawing.Point(152, 303);
+            this.txtPlacaDeVideo.Location = new System.Drawing.Point(178, 310);
             this.txtPlacaDeVideo.Name = "txtPlacaDeVideo";
             this.txtPlacaDeVideo.Size = new System.Drawing.Size(330, 20);
             this.txtPlacaDeVideo.TabIndex = 16;
@@ -272,7 +272,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1111, 555);
+            this.ClientSize = new System.Drawing.Size(892, 613);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.maskedTextBox2);

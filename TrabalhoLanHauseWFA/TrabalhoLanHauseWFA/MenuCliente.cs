@@ -29,11 +29,11 @@ namespace TrabalhoLanHauseWFA
             for (int i = 0; i < Program.clientes.Count; i++)
             {
                 Cliente clinete = Program.clientes[i];
-                if (clinete.Nome.Contains(busca) && (clinete.NomeDeUsuario.Contains(busca) || (clinete.Senha.Contains(busca))))
+                if (clinete.Nome.ToLower().Trim().Contains(busca) || (clinete.NomeDeUsuario.ToLower().Trim().Contains(busca) || (clinete.Senha.ToLower().Trim().Contains(busca))))
                 {
 
                     dataGridView1.Rows.Add(new object[]{
-                    clinete.Nome, clinete.NomeDeUsuario, clinete.NomeDeUsuario, 
+                    clinete.Nome, clinete.NomeDeUsuario, clinete.Senha, 
 
                 });
                 }
@@ -46,22 +46,20 @@ namespace TrabalhoLanHauseWFA
             AtualizarLista();
         }
 
-        private void txtBuscar_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
             if (dataGridView1.CurrentRow == null)
             {
-                MessageBox.Show("Não tem nenhuma peça seleciona");
+                MessageBox.Show("Não tem nenhum usuario selecionado");
                 return;
             }
 
             int linhaSelecionada = dataGridView1.CurrentRow.Index;
             Cliente cliente = Program.clientes[linhaSelecionada];
             new CadastrarCliente(cliente, linhaSelecionada).ShowDialog();
+            
         }
 
         private void txtBuscar_KeyDown(object sender, KeyEventArgs e)
@@ -70,6 +68,36 @@ namespace TrabalhoLanHauseWFA
             {
                 AtualizarLista();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.CurrentRow == null)
+            {
+                MessageBox.Show("Não tem nenhum cliente selecionado");
+                return;
+            }
+            int linhaSelecionada = dataGridView1.CurrentRow.Index;
+
+            Cliente cliente = Program.clientes[linhaSelecionada];
+            DialogResult resultado = MessageBox.Show("Deseja apagar " + cliente.Nome + " o registro?", "AVISO", MessageBoxButtons.YesNo);
+            if (resultado == DialogResult.Yes)
+            {
+
+                Program.clientes.RemoveAt(linhaSelecionada);
+                AtualizarLista();
+                MessageBox.Show("Registro apagado com seucesso");
+            }
+            else
+            {
+                MessageBox.Show("Quase fez M#@$! né");
+            }
+            AtualizarLista();
         }
 
       

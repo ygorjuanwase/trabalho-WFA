@@ -19,13 +19,31 @@ namespace TrabalhoLanHauseWFA
 
         private void btncadastrar_Click(object sender, EventArgs e)
         {
-            TelaCadastrar cadastrar = new TelaCadastrar();
-            cadastrar.Show();
+            new TelaCadastrar().ShowDialog();
         }
 
         private void btnApagar_Click(object sender, EventArgs e)
         {
 
+            if (dataGridView1.CurrentRow == null)
+            {
+                MessageBox.Show("Não tem nenhum Nome selecionado");
+                return;
+            }
+            int linhaSelecionada = dataGridView1.CurrentRow.Index;
+
+            JogosDeTabuleiro jogosTabuleiros = Program.jogosTabuleiros[linhaSelecionada];
+            DialogResult resultado = MessageBox.Show("Deseja apagar " +   " o registro?", "AVISO", MessageBoxButtons.YesNo);
+            if (resultado == DialogResult.Yes)
+            {
+
+                Program.jogosTabuleiros.RemoveAt(linhaSelecionada);
+                MessageBox.Show("Registro apagado com seucesso");
+            }
+            else
+            {
+                MessageBox.Show("Sue registro foi salvo.");
+            }
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
