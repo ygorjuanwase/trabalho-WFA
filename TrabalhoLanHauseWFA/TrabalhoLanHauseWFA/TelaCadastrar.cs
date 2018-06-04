@@ -22,90 +22,48 @@ namespace TrabalhoLanHauseWFA
         {
             AtualizarLista();
         }
-        private void txtMarca_TextChanged(object sender, EventArgs e)
-        {
-            string Marca = txtMarca.Text;
-            Marca = txtMarca.Text;
+        
         }
 
-        private void txtTamanhoDoCpu_TextChanged(object sender, EventArgs e)
-        {
-            int tamanhoCpu = 0;
-            try
-            {
-                tamanhoCpu = Convert.ToInt32(txtTamanhoDoCpu.Text);
-
-            }
-            catch
-            {
-                MessageBox.Show("TAmanho do CPU deve conter samente numeros reais.");
-                txtTamanhoDoCpu.Focus();
-                return;
-            }
-        }
-
-        private void txtProcessador_TextChanged(object sender, EventArgs e)
-        {
-            string processador = txtProcessador.Text;
-            processador = txtProcessador.Text;
-        }
-
-        private void txtPlacaDeVideo_TextChanged(object sender, EventArgs e)
-        {
-            string placaDeVideo = txtPlacaDeVideo.Text;
-            placaDeVideo = txtPlacaDeVideo.Text;
-        }
-
-        private void txtPlacaMae_TextChanged(object sender, EventArgs e)
-        {
-            string placaMae = txtPlacaMae.Text;
-            placaMae = txtPlacaMae.Text;
-        }
-
+       
         private void button2_Click(object sender, EventArgs e)
         {
             MenuComputadores computadores = new MenuComputadores();
             computadores.Show();
             if (txtMarca.Text.Length < 5)
             {
-                MessageBox.Show("Nome deve apresentar mais de 5 letras");
+                MessageBox.Show("Marca deve conter mais de 5 letras");
                 txtMarca.Focus();
                 return;
             }
-            if (txtTa.Text.Length <= 5)
+            if (txtTamanhoDoCpu.Text.Length <= 5)
             {
-                MessageBox.Show("Nome do criador deve conter mais de 5 leras");
-                txtCriadorJogo.Focus();
+                MessageBox.Show("Tamanho da Cpu deve conter mais de 5 leras");
+                txtTamanhoDoCpu.Focus();
                 return;
             }
-            if (txtQuantidadeJogadores.Text.Length == 0)
+            if (cbMemoriaRan.SelectedIndex < 0)
             {
-                MessageBox.Show("Quantidade de jogadores Deve ser preenchido.");
-                txtQuantidadeJogadores.Focus();
+                MessageBox.Show("Memoria RAN Deve ser preenchido.");
+                cbMemoriaRan.Focus();
                 return;
             }
-            if (cbEstiloJogo.SelectedIndex < 0)
+            if (txtProcessador.Text.Length < 4)
             {
-                MessageBox.Show("Estilo do jogo deve ser preenchido");
-                cbEstiloJogo.DroppedDown = true;
+                MessageBox.Show("processador deve conter mais de 4 letras");
+                txtProcessador.Focus();
                 return;
             }
-            if (cbEstiloTAbuleiro.SelectedIndex < 0)
+            if (txtPlacaDeVideo.Text.Length < 4)
             {
-                MessageBox.Show("estilo de tabuleiro deve ser preenchido");
-                cbEstiloTAbuleiro.DroppedDown = true;
+                MessageBox.Show("placa de video deve conter mais de 4 letras");
+                
                 return;
             }
 
             JogosDeTabuleiro jogostabuleiro = new JogosDeTabuleiro()
             {
-                NomeDoJogo = txtNomeDoJogo.Text.ToLower(),
-                AnoDeFabricacao = mtbAnoFabricacao.Text,
-                CriadorDoJogo = txtCriadorJogo.Text.ToLower(),
-                QuantidadeDeJogadores = Convert.ToInt32(txtQuantidadeJogadores.Text),
-                EstilodoJogo = cbEstiloJogo.SelectedItem.ToString(),
-                EstiloDoTabuleiro = cbEstiloTAbuleiro.SelectedItem.ToString(),
-                sim = radioButton1.Checked
+              
             };
             if (posicao >= 0)
             {

@@ -213,7 +213,7 @@
             // 
             // txtPlacaDeVideo
             // 
-            this.txtPlacaDeVideo.Location = new System.Drawing.Point(152, 303);
+            this.txtPlacaDeVideo.Location = new System.Drawing.Point(178, 310);
             this.txtPlacaDeVideo.Name = "txtPlacaDeVideo";
             this.txtPlacaDeVideo.Size = new System.Drawing.Size(330, 20);
             this.txtPlacaDeVideo.TabIndex = 16;
