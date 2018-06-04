@@ -54,7 +54,7 @@
             this.ColumnNome,
             this.ColumnEndereco,
             this.ColumnResponsavel});
-            this.dataGridView1.Location = new System.Drawing.Point(28, 253);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 253);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(960, 319);
@@ -85,9 +85,9 @@
             // 
             this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(889, 199);
+            this.button1.Location = new System.Drawing.Point(873, 199);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 48);
+            this.button1.Size = new System.Drawing.Size(99, 48);
             this.button1.TabIndex = 2;
             this.button1.Text = "Apagar";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -97,7 +97,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(550, 199);
+            this.button2.Location = new System.Drawing.Point(534, 199);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(107, 48);
             this.button2.TabIndex = 3;
@@ -108,7 +108,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(663, 199);
+            this.button3.Location = new System.Drawing.Point(647, 199);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(107, 48);
             this.button3.TabIndex = 4;
@@ -121,7 +121,7 @@
             // 
             this.button4.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.Location = new System.Drawing.Point(776, 199);
+            this.button4.Location = new System.Drawing.Point(760, 199);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(107, 48);
             this.button4.TabIndex = 5;
@@ -133,7 +133,7 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(28, 199);
+            this.button5.Location = new System.Drawing.Point(12, 199);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(104, 48);
             this.button5.TabIndex = 6;
@@ -142,7 +142,7 @@
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(138, 227);
+            this.txtBuscar.Location = new System.Drawing.Point(122, 227);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(406, 20);
             this.txtBuscar.TabIndex = 7;

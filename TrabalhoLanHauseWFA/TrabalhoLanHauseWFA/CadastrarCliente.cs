@@ -16,11 +16,14 @@ namespace TrabalhoLanHauseWFA
         public CadastrarCliente()
         {
             InitializeComponent();
+            txtSenha.UseSystemPasswordChar = true;
+            txtComfirmarSenha.UseSystemPasswordChar = true;
         }
 
-        public CadastrarCliente(Cliente cliente, int posicao)
+        public  CadastrarCliente(Cliente cliente, int posicao)
         {
             this.posicao = posicao;
+            InitializeComponent();
             txtNome.Text = cliente.Nome;
             txtSobrenome.Text = cliente.Sobrenome;
             txtNomeUsuario.Text = cliente.NomeDeUsuario;
@@ -38,75 +41,111 @@ namespace TrabalhoLanHauseWFA
             mbRG.Text = Convert.ToString(cliente.RG);
             mbCPF.Text = cliente.CPF;
             txtEmail.Text = cliente.Email;
+            
 
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            if(txtNome.Text.Length < 1)
+
+        }
+        private void LimparCampos()
+        {
+            txtNome.Text = "";
+            txtSobrenome.Text = "";
+            txtNomeUsuario.Text = "";
+            txtSenha.Text = "";
+            txtComfirmarSenha.Text = "";
+            cbSexo.SelectedItem = -1;
+            txtLogradouro.Text = "";
+            txtNumero.Text = "";
+            txtComplemento.Text = "";
+            mbCEP.Text = "";
+            txtBairro.Text = "";
+            txtCidade.Text = "";
+            mbUF.Text = "";
+            txtReferencias.Text = "";
+            mbRG.Text = "";
+            mbCPF.Text = "";
+            txtEmail.Text = "";
+        }
+
+        private void CadastrarCliente_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
+
+        private void btnSalvar_Click_1(object sender, EventArgs e)
+        {
+            if (txtNome.Text.Length < 1)
             {
                 MessageBox.Show("Nome não informado");
                 txtNome.Focus();
                 return;
             }
 
-            if(txtSobrenome.Text.Length < 1)
+            if (txtSobrenome.Text.Length < 1)
             {
                 MessageBox.Show("Sobrenome Nâo informado");
                 txtSobrenome.Focus();
                 return;
             }
 
-            if(txtNomeUsuario.Text.Length < 1)
+            if (txtNomeUsuario.Text.Length < 1)
             {
                 MessageBox.Show("Nome de usuário nao informado");
                 txtNomeUsuario.Focus();
                 return;
             }
 
-            if(txtSenha.Text.Length < 8)
+            if (txtSenha.Text.Length < 8)
             {
                 MessageBox.Show("A senha deve ter no mínimo 8 caracteres");
                 txtSenha.Focus();
                 return;
             }
 
-            if(txtComfirmarSenha.Text != txtSenha.Text)
+            if (txtComfirmarSenha.Text != txtSenha.Text)
             {
                 MessageBox.Show("As senhas nao coincidem");
                 txtComfirmarSenha.Focus();
                 return;
             }
 
-            if(cbSexo.SelectedIndex < 0)
+            if (cbSexo.SelectedIndex < 0)
             {
                 MessageBox.Show("Selecione um sexo");
                 cbSexo.Focus();
                 return;
             }
 
-            if(txtLogradouro.Text.Length < 1)
+            if (txtLogradouro.Text.Length < 1)
             {
                 MessageBox.Show("Informe um logradouro");
                 txtLogradouro.Focus();
                 return;
             }
 
-            if(txtNumero.Text.Length < 1)
+            if (txtNumero.Text.Length < 1)
             {
                 MessageBox.Show("Infome o numero da casa");
                 txtNumero.Focus();
                 return;
             }
 
-            if(mbCEP.Text.Length < 8)
+            if (mbCEP.Text.Length < 8)
             {
                 MessageBox.Show("Cep inválido");
                 mbCEP.Focus();
                 return;
             }
 
-            if(txtBairro.Text.Length < 1)
+            if (txtBairro.Text.Length < 1)
             {
                 MessageBox.Show("Informe um bairro");
                 txtBairro.Focus();
@@ -120,7 +159,7 @@ namespace TrabalhoLanHauseWFA
                 return;
             }
 
-            if(mbUF.Text.Length < 2)
+            if (mbUF.Text.Length < 2)
             {
                 MessageBox.Show("UF inválido");
                 mbUF.Focus();
@@ -134,7 +173,7 @@ namespace TrabalhoLanHauseWFA
                 return;
             }
 
-            if(mbCPF.Text.Length < 11)
+            if (mbCPF.Text.Length < 11)
             {
                 MessageBox.Show("CPF inválido");
                 mbCPF.Focus();
@@ -142,9 +181,9 @@ namespace TrabalhoLanHauseWFA
             }
 
 
-            
 
-            
+
+
 
             Cliente cliente = new Cliente()
             {
@@ -157,14 +196,16 @@ namespace TrabalhoLanHauseWFA
                 Logradouro = txtLogradouro.Text,
                 Numero = Convert.ToInt32(txtNumero.Text),
                 Complemento = txtComplemento.Text,
-                CEP = Convert.ToDouble(mbCEP.Text),
+                CEP = mbCEP.Text,
                 Bairro = txtBairro.Text,
                 Cidade = txtCidade.Text,
                 UF = mbUF.Text,
                 Referencias = txtReferencias.Text,
                 RG = Convert.ToDouble(mbRG.Text),
-                CPF = mbCPF.Text,              
-                Email = txtEmail.Text
+                CPF = mbCPF.Text,
+                Email = txtEmail.Text,
+                DataNascimento = dateTimePicker1.Value,
+                DataDoCadastro = dateTimePicker2.Value,
             };
 
             if (posicao >= 0)
@@ -180,40 +221,31 @@ namespace TrabalhoLanHauseWFA
 
             LimparCampos();
         }
-        private void LimparCampos()
-        {
-                txtNome.Text = "";
-                txtSobrenome.Text = "";
-                txtNomeUsuario.Text = "";
-                txtSenha.Text = "";
-                txtComfirmarSenha.Text = "";
-                cbSexo.SelectedItem = -1;
-                txtLogradouro.Text = "";
-                txtNumero.Text = "";
-                txtComplemento.Text = "";
-                mbCEP.Text = "";
-                txtBairro.Text = "";
-                txtCidade.Text = "";
-                mbUF.Text = "";
-                txtReferencias.Text = "";
-                mbRG.Text = "";
-                mbCPF.Text = "";
-                txtEmail.Text = "";
-        }
 
-        private void CadastrarCliente_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
             Dispose();
         }
 
-      
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtSenha.UseSystemPasswordChar = false;
+            txtComfirmarSenha.UseSystemPasswordChar = false;
+            button1.Visible = false;
+            button3.Visible = true;
+        }
 
-        
-      
+        private void button3_Click(object sender, EventArgs e)
+        {
+            txtSenha.UseSystemPasswordChar = true;
+            txtComfirmarSenha.UseSystemPasswordChar = true;
+            button3.Visible = false;
+            button1.Visible = true;
+        }
+
+
+
+
+
     }
 }

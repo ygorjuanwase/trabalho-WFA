@@ -172,5 +172,10 @@ namespace TrabalhoLanHauseWFA
         public object Pais { get; set; }
 
         public bool telefone { get; set; }
+
+        private void CadastrarFIlial_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

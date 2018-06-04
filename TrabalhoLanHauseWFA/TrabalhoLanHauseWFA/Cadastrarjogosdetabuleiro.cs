@@ -13,23 +13,26 @@ namespace TrabalhoLanHauseWFA
     public partial class Cadastrarjogosdetabuleiro : Form
     {
         private int posicao = -1;
+        private JogosDeTabuleiro tabuleiro;
+        private int linhaSelecionada;
         public Cadastrarjogosdetabuleiro()
         {
             InitializeComponent();
         }
-        private Cadastrarjogosdetabuleiro (JogosDeTabuleiro jogotabuleiro, int posicao)
+
+        public Cadastrarjogosdetabuleiro(JogosDeTabuleiro tabuleiro, int posicao)
         {
             this.posicao = posicao;
             InitializeComponent();
-            txtNomeDoJogo.Text = jogotabuleiro.NomeDoJogo;
-            mtbAnoFabricacao.Text = jogotabuleiro.AnoDeFabricacao;
-            txtCriadorJogo.Text = jogotabuleiro.CriadorDoJogo;
+            txtNomeDoJogo.Text = tabuleiro.NomeDoJogo;
+            mtbAnoFabricacao.Text = tabuleiro.AnoDeFabricacao;
+            txtCriadorJogo.Text = tabuleiro.CriadorDoJogo;
             txtQuantidadeJogadores.Text = Convert.ToString(txtQuantidadeJogadores.Text);
-            cbEstiloJogo.SelectedItem = jogotabuleiro.EstilodoJogo;
-            cbEstiloTAbuleiro.SelectedItem = jogotabuleiro.EstiloDoTabuleiro;
+            cbEstiloJogo.SelectedItem = tabuleiro.EstilodoJogo;
+            cbEstiloTAbuleiro.SelectedItem = tabuleiro.EstiloDoTabuleiro;
             
-
         }
+       
 
         private void label6_Click(object sender, EventArgs e)
         {
@@ -109,6 +112,11 @@ namespace TrabalhoLanHauseWFA
         private void button1_Click(object sender, EventArgs e)
         {
             Dispose();
+        }
+
+        private void Cadastrarjogosdetabuleiro_Load(object sender, EventArgs e)
+        {
+
         }
 
     }

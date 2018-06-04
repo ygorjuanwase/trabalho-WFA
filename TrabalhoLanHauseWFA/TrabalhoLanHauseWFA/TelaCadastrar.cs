@@ -36,6 +36,7 @@ namespace TrabalhoLanHauseWFA
                 txtMarca.Focus();
                 return;
             }
+<<<<<<< HEAD
             if (txtTamanhoDoCpu.Text.Length <= 5)
             {
                 MessageBox.Show("Tamanho da Cpu deve conter mais de 5 leras");
@@ -77,6 +78,9 @@ namespace TrabalhoLanHauseWFA
             }
 
             LimparCampos();
+=======
+           
+>>>>>>> e86814d8e93da467fe43007fcc0fd9876adc778c
             
         }
 

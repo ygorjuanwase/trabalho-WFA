@@ -14,7 +14,8 @@ namespace TrabalhoLanHauseWFA
         public string Descricao;
         public int Classificacao;
         public int Players;
-        public double valor;
+        public double Valor;
+        public int QuantidadeEstoque;
         public DateTime DataLancamento;
 
     }
